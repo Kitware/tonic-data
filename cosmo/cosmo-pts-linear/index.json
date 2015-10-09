@@ -1,0 +1,146 @@
+{
+  "type": [
+    "tonic-query-data-model"
+  ],
+  "arguments_order": [
+    "volume",
+    "halos",
+    "volumeIdx",
+    "phi",
+    "theta",
+    "time"
+  ],
+  "arguments": {
+    "phi": {
+      "loop": "modulo",
+      "ui": "slider",
+      "values": [
+        "0",
+        "15",
+        "30",
+        "45",
+        "60",
+        "75",
+        "90",
+        "105",
+        "120",
+        "135",
+        "150",
+        "165",
+        "180",
+        "195",
+        "210",
+        "225",
+        "240",
+        "255",
+        "270",
+        "285",
+        "300",
+        "315",
+        "330",
+        "345"
+      ],
+      "bind": {
+        "mouse": {
+          "drag": {
+            "modifier": 0,
+            "coordinate": 0,
+            "step": 10,
+            "orientation": -1
+          }
+        }
+      }
+    },
+    "volume": {
+      "values": [
+        "on",
+        "off"
+      ]
+    },
+    "time": {
+      "loop": "reverse",
+      "ui": "slider",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    "halos": {
+      "values": [
+        "on",
+        "off"
+      ]
+    },
+    "theta": {
+      "default": 5,
+      "ui": "slider",
+      "values": [
+        "15",
+        "30",
+        "45",
+        "60",
+        "75",
+        "90",
+        "105",
+        "120",
+        "135",
+        "150",
+        "165"
+      ],
+      "bind": {
+        "mouse": {
+          "drag": {
+            "modifier": 0,
+            "coordinate": 1,
+            "step": 30,
+            "orientation": -1
+          }
+        }
+      }
+    },
+    "volumeIdx": {
+      "loop": "reverse",
+      "ui": "slider",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "label": "Idx"
+    }
+  },
+  "data": [
+    {
+      "name": "image",
+      "type": "blob",
+      "mimeType": "image/jpg",
+      "pattern": "{time}/{halos}/{volume}/{volumeIdx}/{theta}_{phi}.jpg"
+    }
+  ],
+  "metadata": {
+    "cost": {
+      "images": 91608,
+      "image-width": 500,
+      "space": 4238744475,
+      "time": 75800.97896337509
+    },
+    "title": "Magnitude Volume + Halos/Time",
+    "description": "Show the magnitude density using volume visualization with glyphed halos.",
+    "size": "4.7 GB"
+  }
+}

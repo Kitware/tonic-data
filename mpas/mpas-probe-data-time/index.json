@@ -1,0 +1,94 @@
+{
+  "InSituDataProber": {
+    "dimensions": [
+      500,
+      250,
+      30
+    ],
+    "fields": [
+      "temperature",
+      "salinity",
+      "pressure",
+      "density"
+    ],
+    "origin": [
+      -180,
+      -84,
+      0
+    ],
+    "ranges": {
+      "density": [
+        0,
+        1042
+      ],
+      "pressure": [
+        0,
+        30000000
+      ],
+      "salinity": [
+        0,
+        38
+      ],
+      "temperature": [
+        -5,
+        30
+      ]
+    },
+    "slices": [
+      "slice_0",
+      "slice_1",
+      "slice_2"
+    ],
+    "spacing": [
+      1,
+      1,
+      4
+    ],
+    "sprite_size": 10
+  },
+  "arguments": {
+    "time": {
+      "loop": "reverse",
+      "ui": "slider",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  },
+  "arguments_order": [
+    "time"
+  ],
+  "data": [
+    {
+      "mimeType": "image/png",
+      "name": "slice_0",
+      "pattern": "{time}/{field}_0.png",
+      "type": "blob"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "slice_1",
+      "pattern": "{time}/{field}_1.png",
+      "type": "blob"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "slice_2",
+      "pattern": "{time}/{field}_2.png",
+      "type": "blob"
+    }
+  ],
+  "metadata": {
+    "description": "4 Timesteps. Some simulation data from MPAS. Probe dataset for temperature + salinity using PNG encoding for float.",
+    "title": "Probe Ocean simulation data",
+    "size": "74.2 MB"
+  },
+  "type": [
+    "tonic-query-data-model",
+    "in-situ-data-prober"
+  ]
+}

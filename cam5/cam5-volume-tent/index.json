@@ -1,0 +1,134 @@
+{
+  "type": [
+    "tonic-query-data-model"
+  ],
+  "arguments_order": [
+    "volumeIdx",
+    "theta",
+    "phi",
+    "time"
+  ],
+  "arguments": {
+    "phi": {
+      "loop": "modulo",
+      "ui": "slider",
+      "values": [
+        "0",
+        "15",
+        "30",
+        "45",
+        "60",
+        "75",
+        "90",
+        "105",
+        "120",
+        "135",
+        "150",
+        "165",
+        "180",
+        "195",
+        "210",
+        "225",
+        "240",
+        "255",
+        "270",
+        "285",
+        "300",
+        "315",
+        "330",
+        "345"
+      ],
+      "bind": {
+        "mouse": {
+          "drag": {
+            "modifier": 0,
+            "coordinate": 0,
+            "step": 10,
+            "orientation": 1
+          }
+        }
+      }
+    },
+    "theta": {
+      "default": 5,
+      "ui": "slider",
+      "values": [
+        "15",
+        "30",
+        "45",
+        "60",
+        "75",
+        "90",
+        "105",
+        "120",
+        "135",
+        "150",
+        "165"
+      ],
+      "bind": {
+        "mouse": {
+          "drag": {
+            "modifier": 0,
+            "coordinate": 1,
+            "step": 30,
+            "orientation": 1
+          }
+        }
+      }
+    },
+    "time": {
+      "loop": "reverse",
+      "ui": "slider",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "volumeIdx": {
+      "label": "Mode",
+      "ui": "slider",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    }
+  },
+  "data": [
+    {
+      "name": "image",
+      "type": "blob",
+      "mimeType": "image/jpg",
+      "pattern": "{time}/{volumeIdx}/{theta}_{phi}.jpg"
+    }
+  ],
+  "metadata": {
+    "cost": {
+      "image-width": 500,
+      "images": 34320,
+      "space": 859425429,
+      "time": 52949
+    },
+    "description": "Use a tent-shaped transfer function to volume render temperature data.",
+    "title": "Temperature Volume Rendering",
+    "size": "860.6 MB"
+  }
+}

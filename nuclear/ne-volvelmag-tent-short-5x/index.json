@@ -1,0 +1,141 @@
+{
+  "arguments": {
+    "fins": {
+      "values": [
+        "on",
+        "off"
+      ]
+    },
+    "phi": {
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 0,
+            "modifier": 0,
+            "orientation": 1,
+            "step": 10
+          }
+        }
+      },
+      "loop": "modulo",
+      "ui": "slider",
+      "values": [
+        "0",
+        "15",
+        "30",
+        "45",
+        "60",
+        "75",
+        "90",
+        "105",
+        "120",
+        "135",
+        "150",
+        "165",
+        "180",
+        "195",
+        "210",
+        "225",
+        "240",
+        "255",
+        "270",
+        "285",
+        "300",
+        "315",
+        "330",
+        "345"
+      ]
+    },
+    "theta": {
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 1,
+            "modifier": 0,
+            "orientation": 1,
+            "step": 30
+          }
+        }
+      },
+      "default": 5,
+      "ui": "slider",
+      "values": [
+        "15",
+        "30",
+        "45",
+        "60",
+        "75",
+        "90",
+        "105",
+        "120",
+        "135",
+        "150",
+        "165"
+      ]
+    },
+    "time": {
+      "loop": "reverse",
+      "ui": "slider",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "tube": {
+      "values": [
+        "on",
+        "off"
+      ]
+    },
+    "volumeIdx": {
+      "ui": "slider",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  },
+  "arguments_order": [
+    "fins",
+    "tube",
+    "volumeIdx",
+    "theta",
+    "phi",
+    "time"
+  ],
+  "data": [
+    {
+      "mimeType": "image/jpg",
+      "name": "image",
+      "pattern": "{time}/{fins}/{tube}/{volumeIdx}/{theta}_{phi}.jpg",
+      "type": "blob"
+    }
+  ],
+  "metadata": {
+    "cost": {
+      "image-width": 500,
+      "images": 54912,
+      "space": 1155142748,
+      "time": 0
+    },
+    "description": "Volume rendering of velocity magnitude using tent transfer function.",
+    "size": "1.2 GB",
+    "title": "Single Pin - short - 5x"
+  },
+  "type": [
+    "tonic-query-data-model"
+  ]
+}

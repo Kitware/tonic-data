@@ -1,0 +1,282 @@
+{
+  "CompositePipeline": {
+    "default_pipeline": "AHBDCDDDED",
+    "dimensions": [
+      500,
+      500
+    ],
+    "fields": {
+      "A": "nX",
+      "B": "nY",
+      "C": "nZ",
+      "D": "magnitude",
+      "E": "U",
+      "F": "T",
+      "G": "V",
+      "H": "bottomDepth"
+    },
+    "layer_fields": {
+      "A": [
+        "H"
+      ],
+      "B": [
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "C": [
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "D": [
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "E": [
+        "D",
+        "E",
+        "F",
+        "G"
+      ]
+    },
+    "color_by_dependencies": {
+      "A": {
+        "normal": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      "B": {
+        "normal": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      "C": {
+        "normal": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      "D": {
+        "normal": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      "E": {
+        "normal": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    },
+    "layers": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "offset": {
+      "AA": 2,
+      "AB": 3,
+      "AC": 4,
+      "AH": 1,
+      "BA": 9,
+      "BB": 10,
+      "BC": 11,
+      "BD": 8,
+      "BE": 6,
+      "BF": 5,
+      "BG": 7,
+      "CA": 16,
+      "CB": 17,
+      "CC": 18,
+      "CD": 15,
+      "CE": 13,
+      "CF": 12,
+      "CG": 14,
+      "DA": 23,
+      "DB": 24,
+      "DC": 25,
+      "DD": 22,
+      "DE": 20,
+      "DF": 19,
+      "DG": 21,
+      "EA": 30,
+      "EB": 31,
+      "EC": 32,
+      "ED": 29,
+      "EE": 27,
+      "EF": 26,
+      "EG": 28
+    },
+    "pipeline": [
+      {
+        "ids": [
+          "A"
+        ],
+        "name": "Earth core",
+        "type": "layer"
+      },
+      {
+        "children": [
+          {
+            "ids": [
+              "B"
+            ],
+            "name": "T=265.0",
+            "type": "layer"
+          },
+          {
+            "ids": [
+              "C"
+            ],
+            "name": "T=275.0",
+            "type": "layer"
+          },
+          {
+            "ids": [
+              "D"
+            ],
+            "name": "T=285.0",
+            "type": "layer"
+          },
+          {
+            "ids": [
+              "E"
+            ],
+            "name": "T=295.0",
+            "type": "layer"
+          }
+        ],
+        "ids": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ],
+        "name": "Contour by T",
+        "type": "directory"
+      }
+    ],
+    "ranges": {
+      "T": [
+        179.37369418232515,
+        311.0053003187245
+      ],
+      "U": [
+        -84.1830698988787,
+        111.64419397901145
+      ],
+      "V": [
+        -89.65351927506987,
+        84.1830698988787
+      ],
+      "bottomDepth": [
+        -10277,
+        7170
+      ],
+      "magnitude": [
+        0.006366020732718231,
+        116.124781392773
+      ]
+    }
+  },
+  "type": [
+    "tonic-query-data-model",
+    "webgl-composite",
+    "sxyz-light"
+  ],
+  "arguments_order": [
+    "phi",
+    "theta",
+    "time"
+  ],
+  "arguments": {
+    "phi": {
+      "ui": "slider",
+      "values": [
+        "0.0",
+        "20.0",
+        "40.0",
+        "60.0",
+        "80.0",
+        "100.0",
+        "120.0",
+        "140.0",
+        "160.0",
+        "180.0",
+        "200.0",
+        "220.0",
+        "240.0",
+        "260.0",
+        "280.0",
+        "300.0",
+        "320.0",
+        "340.0"
+      ]
+    },
+    "theta": {
+      "default": 3,
+      "ui": "slider",
+      "values": [
+        "10.0",
+        "30.0",
+        "60.0",
+        "90.0",
+        "120.0",
+        "150.0",
+        "170.0"
+      ]
+    },
+    "time": {
+      "ui": "slider",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    }
+  },
+  "data": [
+    {
+      "name": "sxyzSprite",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{theta}/{phi}/rgbd.png"
+    }
+  ],
+  "metadata": {
+    "description": "3D contour of temperature",
+    "size": "8.4 GB",
+    "title": "Lit 3D contours composite",
+    "cost": {
+      "image-width": 500,
+      "images": 0,
+      "space": 203053170,
+      "time": 20059.95893597603
+    }
+  }
+}

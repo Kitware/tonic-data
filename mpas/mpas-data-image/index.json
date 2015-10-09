@@ -1,0 +1,111 @@
+{
+  "type": [
+    "tonic-query-data-model"
+  ],
+  "arguments_order": [
+    "surfaceContour",
+    "contourIdx",
+    "theta",
+    "phi",
+    "time"
+  ],
+  "arguments": {
+    "contourIdx": {
+      "ui": "slider",
+      "values": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "label": "Contour"
+    },
+    "phi": {
+      "loop": "modulo",
+      "ui": "slider",
+      "values": [
+        "0",
+        "15",
+        "30",
+        "45",
+        "60",
+        "75",
+        "90",
+        "105",
+        "120",
+        "135",
+        "150",
+        "165",
+        "180",
+        "195",
+        "210",
+        "225",
+        "240",
+        "255",
+        "270",
+        "285",
+        "300",
+        "315",
+        "330",
+        "345"
+      ],
+      "bind": {
+        "mouse": {
+          "drag": {
+            "modifier": 0,
+            "coordinate": 0,
+            "step": 10,
+            "orientation": -1
+          }
+        }
+      }
+    },
+    "surfaceContour": {
+      "values": [
+        "temperature",
+        "salinity"
+      ],
+      "label": "Surface contour"
+    },
+    "theta": {
+      "default": 3,
+      "ui": "slider",
+      "values": [
+        "30",
+        "60",
+        "90",
+        "120",
+        "150"
+      ],
+      "bind": {
+        "mouse": {
+          "drag": {
+            "modifier": 0,
+            "coordinate": 1,
+            "step": 30,
+            "orientation": -1
+          }
+        }
+      }
+    }
+  },
+  "data": [
+    {
+      "name": "image",
+      "type": "blob",
+      "mimeType": "image/jpg",
+      "pattern": "{surfaceContour}/{contourIdx}/{theta}_{phi}.jpg"
+    }
+  ],
+  "metadata": {
+    "title": "Earth iso-contours",
+    "description": "Image base dataset with 10 contours either on temperature or salinity.",
+    "size": "654.8 MB"
+  }
+}

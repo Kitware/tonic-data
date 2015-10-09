@@ -1,0 +1,237 @@
+{
+  "CompositePipeline": {
+    "default_pipeline": "ABBACADAEAFA",
+    "layers": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "dimensions": [
+      500,
+      500
+    ],
+    "fields": {
+      "A": "magnitude",
+      "B": "color"
+    },
+    "layer_fields": {
+      "A": [
+        "B"
+      ],
+      "B": [
+        "A"
+      ],
+      "C": [
+        "A"
+      ],
+      "D": [
+        "A"
+      ],
+      "E": [
+        "A"
+      ],
+      "F": [
+        "A"
+      ]
+    },
+    "offset": {
+      "AB": 1,
+      "BA": 2,
+      "CA": 3,
+      "DA": 4,
+      "EA": 5,
+      "FA": 6
+    },
+    "pipeline": [
+      {
+        "ids": [
+          "A"
+        ],
+        "name": "Outline",
+        "type": "layer"
+      },
+      {
+        "children": [
+          {
+            "ids": [
+              "B"
+            ],
+            "name": "[900, +]",
+            "type": "layer"
+          },
+          {
+            "ids": [
+              "C"
+            ],
+            "name": "[700, 900]",
+            "type": "layer"
+          },
+          {
+            "ids": [
+              "D"
+            ],
+            "name": "[500, 700]",
+            "type": "layer"
+          },
+          {
+            "ids": [
+              "E"
+            ],
+            "name": "[300, 500]",
+            "type": "layer"
+          },
+          {
+            "ids": [
+              "F"
+            ],
+            "name": "[100, 300]",
+            "type": "layer"
+          }
+        ],
+        "ids": [
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ],
+        "name": "Magnitude Thresholds",
+        "type": "directory"
+      }
+    ],
+    "color_by_dependencies": {
+      "A": {},
+      "B": {},
+      "C": {},
+      "D": {},
+      "E": {},
+      "F": {}
+    },
+    "ranges": {
+      "magnitude": [
+        22.2203,
+        19253.8
+      ],
+      "color": [
+        0,
+        1
+      ]
+    }
+  },
+  "arguments": {
+    "phi": {
+      "ui": "slider",
+      "values": [
+        "0.0",
+        "15.0",
+        "30.0",
+        "45.0",
+        "60.0",
+        "75.0",
+        "90.0",
+        "105.0",
+        "120.0",
+        "135.0",
+        "150.0",
+        "165.0",
+        "180.0",
+        "195.0",
+        "210.0",
+        "225.0",
+        "240.0",
+        "255.0",
+        "270.0",
+        "285.0",
+        "300.0",
+        "315.0",
+        "330.0",
+        "345.0"
+      ],
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 0,
+            "modifier": 0,
+            "orientation": 1,
+            "step": 10
+          }
+        }
+      },
+      "loop": "modulo"
+    },
+    "theta": {
+      "default": 4,
+      "ui": "slider",
+      "values": [
+        "30.0",
+        "45.0",
+        "60.0",
+        "75.0",
+        "90",
+        "105.0",
+        "120.0",
+        "135.0",
+        "150.0"
+      ],
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 1,
+            "modifier": 0,
+            "orientation": 1,
+            "step": 10
+          }
+        }
+      }
+    },
+    "time": {
+      "ui": "slider",
+      "loop": "modulo",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    }
+  },
+  "arguments_order": [
+    "phi",
+    "theta",
+    "time"
+  ],
+  "data": [
+    {
+      "name": "rgbdSprite",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{theta}/{phi}/rgbd.png"
+    }
+  ],
+  "metadata": {
+    "cost": {
+      "image-width": 500,
+      "images": 0,
+      "space": 1193340458,
+      "time": 6956.447350025177
+    },
+    "description": "Show Threshold Densities and Halos.",
+    "size": "3.5 GB",
+    "title": "Dynamic Rendering of Thresholded Points",
+    "error": "This dataset should use LUT for color mapping but the current reader is not able to do that without normals."
+  },
+  "type": [
+    "tonic-query-data-model",
+    "webgl-composite",
+    "rgbd"
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "SortedComposite": {
+    "layers": 4,
+    "scalars": [
+      0,
+      0.3,
+      0.6,
+      1
+    ],
+    "dimensions": [
+      512,
+      512
+    ]
+  },
+  "LookupTables": {
+    "VolumeScalar": {
+      "discrete": true,
+      "controlpoints": [
+        {
+          "x": 0,
+          "r": 0.5,
+          "b": 0.5,
+          "g": 0.5
+        },
+        {
+          "x": 0.3,
+          "r": 1,
+          "b": 0.4,
+          "g": 0.8
+        },
+        {
+          "x": 0.6,
+          "r": 1,
+          "b": 1,
+          "g": 1
+        },
+        {
+          "x": 1,
+          "r": 1,
+          "b": 0.6,
+          "g": 0.8
+        }
+      ]
+    }
+  },
+  "type": [
+    "tonic-query-data-model",
+    "sorted-composite",
+    "alpha"
+  ],
+  "metadata": {
+    "backgroundColor": "rgb(0, 0, 0)",
+    "title": "Head CT - 4 features",
+    "description": "Composite volume rendering with 4 features. (Fluid, Skin, Skull, Teeth)",
+    "size": "13.4 MB"
+  },
+  "data": [
+    {
+      "pattern": "{theta}_{phi}/intensity.uint8",
+      "type": "array",
+      "name": "intensity",
+      "categories": [
+        "intensity"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/alpha.uint8",
+      "type": "array",
+      "name": "alpha",
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/order.uint8",
+      "type": "array",
+      "name": "order",
+      "metadata": {}
+    }
+  ],
+  "arguments_order": [
+    "phi",
+    "theta"
+  ],
+  "arguments": {
+    "theta": {
+      "default": 2,
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 1,
+            "step": 30,
+            "modifier": 0,
+            "orientation": 1
+          }
+        }
+      },
+      "ui": "slider",
+      "name": "theta",
+      "values": [
+        "30",
+        "60",
+        "90",
+        "120",
+        "150"
+      ]
+    },
+    "phi": {
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 0,
+            "step": 30,
+            "modifier": 0,
+            "orientation": 1
+          }
+        }
+      },
+      "ui": "slider",
+      "values": [
+        "0",
+        "30",
+        "60",
+        "90",
+        "120",
+        "150",
+        "180",
+        "210",
+        "240",
+        "270",
+        "300",
+        "330"
+      ],
+      "name": "phi",
+      "loop": "modulo"
+    }
+  }
+}

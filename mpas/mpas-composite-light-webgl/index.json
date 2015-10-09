@@ -1,0 +1,319 @@
+{
+    "CompositePipeline": {
+        "color_by_dependencies": {
+            "A": {
+                "normal": [
+                    "E",
+                    "F",
+                    "G"
+                ]
+            },
+            "B": {
+                "normal": [
+                    "E",
+                    "F",
+                    "G"
+                ]
+            },
+            "C": {
+                "normal": [
+                    "E",
+                    "F",
+                    "G"
+                ]
+            },
+            "D": {
+                "normal": [
+                    "E",
+                    "F",
+                    "G"
+                ]
+            },
+            "E": {
+                "normal": [
+                    "E",
+                    "F",
+                    "G"
+                ]
+            }
+        },
+        "dimensions": [
+            500,
+            500
+        ],
+        "fields": {
+            "A": "temperature",
+            "B": "pressure",
+            "C": "density",
+            "D": "salinity",
+            "H": "bottomDepth"
+        },
+        "layer_fields": {
+            "A": [
+                "H"
+            ],
+            "B": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "C": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "D": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "E": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "F": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ]
+        },
+        "layers": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+        ],
+        "offset": {
+            "AE": 2,
+            "AF": 3,
+            "AG": 4,
+            "AH": 1,
+            "BA": 5,
+            "BB": 7,
+            "BC": 8,
+            "BD": 6,
+            "BE": 9,
+            "BF": 10,
+            "BG": 11,
+            "CA": 12,
+            "CB": 14,
+            "CC": 15,
+            "CD": 13,
+            "CE": 16,
+            "CF": 17,
+            "CG": 18,
+            "DA": 19,
+            "DB": 21,
+            "DC": 22,
+            "DD": 20,
+            "DE": 23,
+            "DF": 24,
+            "DG": 25,
+            "EA": 26,
+            "EB": 28,
+            "EC": 29,
+            "ED": 27,
+            "EE": 30,
+            "EF": 31,
+            "EG": 32,
+            "FA": 33,
+            "FB": 35,
+            "FC": 36,
+            "FD": 34,
+            "FE": 37,
+            "FF": 38,
+            "FG": 39
+        },
+        "pipeline": [
+            {
+                "ids": [
+                    "A"
+                ],
+                "name": "Earth core",
+                "type": "layer"
+            },
+            {
+                "children": [
+                    {
+                        "ids": [
+                            "B"
+                        ],
+                        "name": "t=5.0",
+                        "type": "layer"
+                    },
+                    {
+                        "ids": [
+                            "C"
+                        ],
+                        "name": "t=10.0",
+                        "type": "layer"
+                    },
+                    {
+                        "ids": [
+                            "D"
+                        ],
+                        "name": "t=15.0",
+                        "type": "layer"
+                    },
+                    {
+                        "ids": [
+                            "E"
+                        ],
+                        "name": "t=20.0",
+                        "type": "layer"
+                    },
+                    {
+                        "ids": [
+                            "F"
+                        ],
+                        "name": "t=25.0",
+                        "type": "layer"
+                    }
+                ],
+                "ids": [
+                    "B",
+                    "C",
+                    "D",
+                    "E",
+                    "F"
+                ],
+                "name": "Contour by temperature",
+                "type": "directory"
+            }
+        ],
+        "ranges": {
+            "bottomDepth": [
+                -10277,
+                7170
+            ],
+            "density": [
+                1019.9251708984375,
+                1052.529541015625
+            ],
+            "pressure": [
+                48154.75,
+                54817088
+            ],
+            "salinity": [
+                24.844724655151367,
+                37.459560394287109
+            ],
+            "temperature": [
+                -1.6555302143096924,
+                28.691841125488281
+            ]
+        }
+    },
+    "arguments": {
+        "phi": {
+            "bind": {
+                "mouse": {
+                    "drag": {
+                        "coordinate": 0,
+                        "modifier": 0,
+                        "orientation": 1,
+                        "step": 10
+                    }
+                }
+            },
+            "loop": "modulo",
+            "ui": "slider",
+            "values": [
+                "0.0",
+                "20.0",
+                "40.0",
+                "60.0",
+                "80.0",
+                "100.0",
+                "120.0",
+                "140.0",
+                "160.0",
+                "180.0",
+                "200.0",
+                "220.0",
+                "240.0",
+                "260.0",
+                "280.0",
+                "300.0",
+                "320.0",
+                "340.0"
+            ]
+        },
+        "theta": {
+            "bind": {
+                "mouse": {
+                    "drag": {
+                        "coordinate": 1,
+                        "modifier": 0,
+                        "orientation": 1,
+                        "step": 30
+                    }
+                }
+            },
+            "default": 3,
+            "ui": "slider",
+            "values": [
+                "10.0",
+                "30.0",
+                "60.0",
+                "90.0",
+                "120.0",
+                "150.0",
+                "170.0"
+            ]
+        },
+        "time": {
+            "ui": "slider",
+            "values": [
+                "0",
+                "10",
+                "20",
+                "30",
+                "40",
+                "50",
+                "60",
+                "70",
+                "80",
+                "90",
+                "100"
+            ]
+        }
+    },
+    "arguments_order": [
+        "phi",
+        "theta",
+        "time"
+    ],
+    "data": [
+        {
+            "mimeType": "image/png",
+            "name": "sxyzSprite",
+            "pattern": "{time}/{theta}/{phi}/rgbd.png",
+            "type": "blob"
+        }
+    ],
+    "metadata": {
+        "cost": {
+            "image-width": 500,
+            "images": 0,
+            "space": 1159708314,
+            "time": 32153.649321079254
+        },
+        "description": "3D contour of temperature and salinity with normal but no core",
+        "size": "16.0 GB",
+        "title": "3D contours composite",
+        "type": "composite-image-stack-litdepth"
+    },
+    "type": [
+        "tonic-query-data-model",
+        "webgl-composite",
+        "sxyz-light"
+    ]
+}

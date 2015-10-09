@@ -1,0 +1,106 @@
+{
+  "type": [
+    "tonic-query-data-model"
+  ],
+  "arguments_order": [
+    "tftype",
+    "volumeIdx",
+    "theta",
+    "phi",
+    "time"
+  ],
+  "arguments": {
+    "phi": {
+      "loop": "modulo",
+      "ui": "slider",
+      "values": [
+        "0",
+        "30",
+        "60",
+        "90",
+        "120",
+        "150",
+        "180",
+        "210",
+        "240",
+        "270",
+        "300",
+        "330"
+      ],
+      "bind": {
+        "mouse": {
+          "drag": {
+            "modifier": 0,
+            "coordinate": 0,
+            "step": 10,
+            "orientation": 1
+          }
+        }
+      }
+    },
+    "tftype": {
+      "label": "TF Style",
+      "values": [
+        "high-pass",
+        "hat"
+      ]
+    },
+    "theta": {
+      "default": 5,
+      "ui": "slider",
+      "values": [
+        "-75",
+        "-60",
+        "-45",
+        "-30",
+        "-15",
+        "0",
+        "15",
+        "30",
+        "45",
+        "60",
+        "75"
+      ],
+      "bind": {
+        "mouse": {
+          "drag": {
+            "modifier": 0,
+            "coordinate": 1,
+            "step": 30,
+            "orientation": 1
+          }
+        }
+      }
+    },
+    "volumeIdx": {
+      "loop": "reverse",
+      "label": "IDx",
+      "ui": "slider",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    }
+  },
+  "data": [
+    {
+      "name": "image",
+      "type": "blob",
+      "mimeType": "image/jpg",
+      "pattern": "{tftype}/{volumeIdx}/{theta}_{phi}.jpg"
+    }
+  ],
+  "metadata": {
+    "title": "Volume rendering of scan",
+    "description": "No description",
+    "size": "164.2 MB"
+  }
+}

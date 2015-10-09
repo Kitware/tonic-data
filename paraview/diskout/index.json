@@ -1,0 +1,365 @@
+{
+  "CompositePipeline": {
+    "default_pipeline": "AABACADAEA",
+    "layers": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "pipeline": [
+      {
+        "name": "Stream lines",
+        "ids": [
+          "A"
+        ]
+      },
+      {
+        "name": "Clip",
+        "ids": [
+          "B"
+        ]
+      },
+      {
+        "children": [
+          {
+            "name": "AsH3 0.1",
+            "ids": [
+              "C"
+            ]
+          },
+          {
+            "name": "AsH3 0.14",
+            "ids": [
+              "D"
+            ]
+          },
+          {
+            "name": "AsH3 0.18",
+            "ids": [
+              "E"
+            ]
+          }
+        ],
+        "name": "Contours",
+        "ids": [
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    ],
+    "layer_fields": {
+      "A": [
+        "A",
+        "B"
+      ],
+      "C": [
+        "A",
+        "B",
+        "C"
+      ],
+      "B": [
+        "A",
+        "B"
+      ],
+      "E": [
+        "A",
+        "B",
+        "C"
+      ],
+      "D": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "fields": {
+      "A": "Temp",
+      "C": "AsH3",
+      "B": "Pres"
+    }
+  },
+  "type": [
+    "tonic-query-data-model",
+    "sorted-composite",
+    "multi-color-by"
+  ],
+  "arguments": {
+    "theta": {
+      "default": 2,
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 1,
+            "step": 30,
+            "modifier": 0,
+            "orientation": 1
+          }
+        }
+      },
+      "ui": "slider",
+      "name": "theta",
+      "values": [
+        "30",
+        "60",
+        "90",
+        "120",
+        "150"
+      ]
+    },
+    "phi": {
+      "values": [
+        "0",
+        "30",
+        "60",
+        "90",
+        "120",
+        "150",
+        "180",
+        "210",
+        "240",
+        "270",
+        "300",
+        "330"
+      ],
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 0,
+            "step": 30,
+            "modifier": 0,
+            "orientation": 1
+          }
+        }
+      },
+      "ui": "slider",
+      "name": "phi",
+      "loop": "modulo"
+    }
+  },
+  "SortedComposite": {
+    "ranges": {
+      "Pres": [
+        0.00678552,
+        0.0288185
+      ],
+      "Temp": [
+        293.15,
+        913.15
+      ],
+      "AsH3": [
+        0.1,
+        0.18
+      ]
+    },
+    "layers": 5,
+    "pipeline": [
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "Temp"
+          },
+          {
+            "type": "field",
+            "name": "Pres"
+          }
+        ],
+        "name": "Stream lines"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "Temp"
+          },
+          {
+            "type": "field",
+            "name": "Pres"
+          }
+        ],
+        "name": "Clip"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "Temp"
+          },
+          {
+            "type": "field",
+            "name": "Pres"
+          },
+          {
+            "type": "const",
+            "name": "AsH3",
+            "value": 0.1
+          }
+        ],
+        "name": "AsH3 0.1",
+        "parent": "Contours"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "Temp"
+          },
+          {
+            "type": "field",
+            "name": "Pres"
+          },
+          {
+            "type": "const",
+            "name": "AsH3",
+            "value": 0.14
+          }
+        ],
+        "name": "AsH3 0.14",
+        "parent": "Contours"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "Temp"
+          },
+          {
+            "type": "field",
+            "name": "Pres"
+          },
+          {
+            "type": "const",
+            "name": "AsH3",
+            "value": 0.18
+          }
+        ],
+        "name": "AsH3 0.18",
+        "parent": "Contours"
+      }
+    ],
+    "dimensions": [
+      500,
+      500
+    ]
+  },
+  "data": [
+    {
+      "pattern": "{theta}_{phi}/1_Temp.float32",
+      "type": "array",
+      "name": "1_Temp",
+      "categories": [
+        "1_Temp"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/2_Pres.float32",
+      "type": "array",
+      "name": "2_Pres",
+      "categories": [
+        "2_Pres"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/0_Temp.float32",
+      "type": "array",
+      "name": "0_Temp",
+      "categories": [
+        "0_Temp"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/4_Temp.float32",
+      "type": "array",
+      "name": "4_Temp",
+      "categories": [
+        "4_Temp"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/2_Temp.float32",
+      "type": "array",
+      "name": "2_Temp",
+      "categories": [
+        "2_Temp"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/0_Pres.float32",
+      "type": "array",
+      "name": "0_Pres",
+      "categories": [
+        "0_Pres"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/3_Temp.float32",
+      "type": "array",
+      "name": "3_Temp",
+      "categories": [
+        "3_Temp"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/intensity.uint8",
+      "type": "array",
+      "name": "intensity",
+      "categories": [
+        "intensity"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/1_Pres.float32",
+      "type": "array",
+      "name": "1_Pres",
+      "categories": [
+        "1_Pres"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/order.uint8",
+      "type": "array",
+      "name": "order",
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/3_Pres.float32",
+      "type": "array",
+      "name": "3_Pres",
+      "categories": [
+        "3_Pres"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/4_Pres.float32",
+      "type": "array",
+      "name": "4_Pres",
+      "categories": [
+        "4_Pres"
+      ],
+      "metadata": {}
+    }
+  ],
+  "arguments_order": [
+    "phi",
+    "theta"
+  ],
+  "metadata": {
+    "backgroundColor": "rgb(81, 86, 109)",
+    "size": "750.1 MB",
+    "title": "Diskout Composite with opacity ",
+    "description": "Sample dataset"
+  }
+}

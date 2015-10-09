@@ -1,0 +1,193 @@
+{
+  "LookupTables": {
+    "helicity": {
+      "range": [ -100000, 130000 ]
+    }
+  },
+  "type": [
+    "tonic-query-data-model",
+    "in-situ-data-prober"
+  ],
+  "arguments_order": [
+    "time"
+  ],
+  "arguments": {
+    "time": {
+      "loop": "reverse",
+      "ui": "slider",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    }
+  },
+  "InSituDataProber": {
+    "dimensions": [
+      128,
+      128,
+      128
+    ],
+    "fields": [
+      "pressure",
+      "helicity",
+      "velMagnitude",
+      "vorMagnitude"
+    ],
+    "ranges": {
+      "helicity": [
+        -500941,
+        1021300
+      ],
+      "pressure": [
+        -183683,
+        48573.7
+      ],
+      "velMagnitude": [
+        0,
+        14.5396
+      ],
+      "vorMagnitude": [
+        0,
+        135869
+      ]
+    },
+    "slices": [
+      "slice_0",
+      "slice_1",
+      "slice_2",
+      "slice_3",
+      "slice_4",
+      "slice_5",
+      "slice_6",
+      "slice_7",
+      "slice_8",
+      "slice_9",
+      "slice_10",
+      "slice_11",
+      "slice_12",
+      "slice_13",
+      "slice_14",
+      "slice_15"
+    ],
+    "spacing": [
+      1,
+      1,
+      5.2
+    ],
+    "sprite_size": 8
+  },
+  "data": [
+    {
+      "name": "slice_0",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_0.png"
+    },
+    {
+      "name": "slice_1",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_1.png"
+    },
+    {
+      "name": "slice_2",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_2.png"
+    },
+    {
+      "name": "slice_3",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_3.png"
+    },
+    {
+      "name": "slice_4",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_4.png"
+    },
+    {
+      "name": "slice_5",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_5.png"
+    },
+    {
+      "name": "slice_6",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_6.png"
+    },
+    {
+      "name": "slice_7",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_7.png"
+    },
+    {
+      "name": "slice_8",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_8.png"
+    },
+    {
+      "name": "slice_9",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_9.png"
+    },
+    {
+      "name": "slice_10",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_10.png"
+    },
+    {
+      "name": "slice_11",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_11.png"
+    },
+    {
+      "name": "slice_12",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_12.png"
+    },
+    {
+      "name": "slice_13",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_13.png"
+    },
+    {
+      "name": "slice_14",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_14.png"
+    },
+    {
+      "name": "slice_15",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_15.png"
+    }
+  ],
+  "metadata": {
+    "description": "Some simulation data from a single-pin simulation",
+    "title": "Single-pin simulation data",
+    "size": "141.8 MB"
+  }
+}

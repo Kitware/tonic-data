@@ -1,0 +1,226 @@
+{
+    "arguments": {
+        "contourIdx": {
+            "ui": "slider",
+            "values": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10"
+            ]
+        },
+        "phi": {
+            "bind": {
+                "mouse": {
+                    "drag": {
+                        "coordinate": 0,
+                        "modifier": 0,
+                        "orientation": 1,
+                        "step": 10
+                    }
+                }
+            },
+            "loop": "modulo",
+            "ui": "slider",
+            "values": [
+                "0",
+                "15",
+                "30",
+                "45",
+                "60",
+                "75",
+                "90",
+                "105",
+                "120",
+                "135",
+                "150",
+                "165",
+                "180",
+                "195",
+                "210",
+                "225",
+                "240",
+                "255",
+                "270",
+                "285",
+                "300",
+                "315",
+                "330",
+                "345"
+            ]
+        },
+        "surfaceContour": {
+            "label": "Surface contour",
+            "values": [
+                "temperature",
+                "salinity"
+            ]
+        },
+        "theta": {
+            "bind": {
+                "mouse": {
+                    "drag": {
+                        "coordinate": 1,
+                        "modifier": 0,
+                        "orientation": 1,
+                        "step": 10
+                    },
+                    "scroll": {
+                        "coordinate": 1,
+                        "modifier": 0,
+                        "step": 0
+                    }
+                }
+            },
+            "default": 2,
+            "ui": "slider",
+            "values": [
+                "30",
+                "60",
+                "90",
+                "120",
+                "150"
+            ]
+        },
+        "time": {
+            "ui": "slider",
+            "values": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11"
+            ]
+        }
+    },
+    "arguments_order": [
+        "contourIdx",
+        "surfaceContour",
+        "phi",
+        "theta",
+        "time"
+    ],
+    "data": [
+        {
+            "mimeType": "image/jpeg",
+            "name": "image",
+            "pattern": "{time}/{surfaceContour}/{contourIdx}/{theta}_{phi}.jpg",
+            "type": "blob"
+        }
+    ],
+    "metadata": {
+        "analysis": {
+            "filename": "histogram.json",
+            "information": [
+                {
+                    "mappings": [
+                        {
+                            "code": "A",
+                            "value": "temperature"
+                        },
+                        {
+                            "code": "B",
+                            "value": "salinity"
+                        }
+                    ],
+                    "name": "surfaceContour"
+                },
+                {
+                    "mappings": [
+                        {
+                            "code": "J",
+                            "value": "10"
+                        },
+                        {
+                            "code": "A",
+                            "value": "1"
+                        },
+                        {
+                            "code": "C",
+                            "value": "3"
+                        },
+                        {
+                            "code": "B",
+                            "value": "2"
+                        },
+                        {
+                            "code": "E",
+                            "value": "5"
+                        },
+                        {
+                            "code": "D",
+                            "value": "4"
+                        },
+                        {
+                            "code": "G",
+                            "value": "7"
+                        },
+                        {
+                            "code": "F",
+                            "value": "6"
+                        },
+                        {
+                            "code": "I",
+                            "value": "9"
+                        },
+                        {
+                            "code": "H",
+                            "value": "8"
+                        }
+                    ],
+                    "name": "contourIdx"
+                }
+            ],
+            "layer": {
+                "values": [
+                    "AA",
+                    "AB",
+                    "AC",
+                    "AD",
+                    "AE",
+                    "AF",
+                    "AG",
+                    "AH",
+                    "AI",
+                    "AJ",
+                    "BA",
+                    "BB",
+                    "BC",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ"
+                ]
+            },
+            "relativePath": "layers"
+        },
+        "cost": {
+            "image-width": 600,
+            "images": 28800,
+            "space": 2307823765,
+            "time": 3297.7682781219482
+        },
+        "description": "Image base dataset",
+        "size": "2.4 GB",
+        "title": "Earth iso-contours"
+    },
+    "type": [
+        "tonic-query-data-model"
+    ]
+}

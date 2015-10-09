@@ -1,0 +1,141 @@
+{
+  "type": [
+    "tonic-query-data-model",
+    "in-situ-data-prober"
+  ],
+  "arguments_order": [
+    "time"
+  ],
+  "arguments": {
+    "time": {
+      "ui": "slider",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    }
+  },
+  "InSituDataProber": {
+    "dimensions": [
+      128,
+      128,
+      64
+    ],
+    "fields": [
+      "Rank",
+      "T",
+      "U",
+      "V",
+      "magnitude"
+    ],
+    "ranges": {
+      "Rank": [
+        0,
+        7
+      ],
+      "T": [
+        180,
+        312.5
+      ],
+      "U": [
+        -60,
+        92
+      ],
+      "V": [
+        -48,
+        66
+      ],
+      "magnitude": [
+        0,
+        87
+      ]
+    },
+    "slices": [
+      "slice_0",
+      "slice_1",
+      "slice_2",
+      "slice_3",
+      "slice_4",
+      "slice_5",
+      "slice_6",
+      "slice_7"
+    ],
+    "spacing": [
+      2,
+      1,
+      1
+    ],
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "sprite_size": 8
+  },
+  "data": [
+    {
+      "name": "slice_0",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_0.png"
+    },
+    {
+      "name": "slice_1",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_1.png"
+    },
+    {
+      "name": "slice_2",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_2.png"
+    },
+    {
+      "name": "slice_3",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_3.png"
+    },
+    {
+      "name": "slice_4",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_4.png"
+    },
+    {
+      "name": "slice_5",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_5.png"
+    },
+    {
+      "name": "slice_6",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_6.png"
+    },
+    {
+      "name": "slice_7",
+      "type": "blob",
+      "mimeType": "image/png",
+      "pattern": "{time}/{field}_7.png"
+    }
+  ],
+  "metadata": {
+    "title": "CAM5 Probe Data",
+    "description": "Some simulation data from CAM5",
+    "size": "85.7 MB"
+  }
+}

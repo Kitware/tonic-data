@@ -1,0 +1,145 @@
+{
+  "InSituDataProber": {
+    "dimensions": [
+      64,
+      64,
+      320
+    ],
+    "fields": [
+      "helicity",
+      "vel",
+      "vorticity",
+      "pressure"
+    ],
+    "ranges": {
+      "helicity": [
+        -693261,
+        1226094
+      ],
+      "pressure": [
+        -199873,
+        46508.1
+      ],
+      "vel": [
+        -17,
+        17
+      ],
+      "vorticity": [
+        -180793,
+        187012
+      ]
+    },
+    "slices": [
+      "slice_0",
+      "slice_1",
+      "slice_2",
+      "slice_3",
+      "slice_4",
+      "slice_5",
+      "slice_6",
+      "slice_7",
+      "slice_8",
+      "slice_9"
+    ],
+    "spacing": [
+      1,
+      1,
+      1
+    ],
+    "sprite_size": 32
+  },
+  "arguments": {
+    "time": {
+      "ui": "slider",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    }
+  },
+  "arguments_order": [
+    "time"
+  ],
+  "data": [
+    {
+      "mimeType": "image/png",
+      "name": "slice_0",
+      "pattern": "{time}/{field}_0.png",
+      "type": "blob"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "slice_1",
+      "pattern": "{time}/{field}_1.png",
+      "type": "blob"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "slice_2",
+      "pattern": "{time}/{field}_2.png",
+      "type": "blob"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "slice_3",
+      "pattern": "{time}/{field}_3.png",
+      "type": "blob"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "slice_4",
+      "pattern": "{time}/{field}_4.png",
+      "type": "blob"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "slice_5",
+      "pattern": "{time}/{field}_5.png",
+      "type": "blob"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "slice_6",
+      "pattern": "{time}/{field}_6.png",
+      "type": "blob"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "slice_7",
+      "pattern": "{time}/{field}_7.png",
+      "type": "blob"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "slice_8",
+      "pattern": "{time}/{field}_8.png",
+      "type": "blob"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "slice_9",
+      "pattern": "{time}/{field}_9.png",
+      "type": "blob"
+    }
+  ],
+  "metadata": {
+    "description": "Probing dataset of a single-pin simulation",
+    "title": "Single-pin simulation data",
+    "size": "93.1 MB"
+  },
+  "type": [
+    "tonic-query-data-model",
+    "in-situ-data-prober"
+  ]
+}

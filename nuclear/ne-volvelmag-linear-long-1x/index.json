@@ -1,0 +1,141 @@
+{
+  "type": [
+    "tonic-query-data-model"
+  ],
+  "arguments_order": [
+    "fins",
+    "tube",
+    "volumeIdx",
+    "theta",
+    "phi",
+    "time"
+  ],
+  "arguments": {
+    "fins": {
+      "values": [
+        "on",
+        "off"
+      ]
+    },
+    "phi": {
+      "loop": "modulo",
+      "ui": "slider",
+      "values": [
+        "0",
+        "15",
+        "30",
+        "45",
+        "60",
+        "75",
+        "90",
+        "105",
+        "120",
+        "135",
+        "150",
+        "165",
+        "180",
+        "195",
+        "210",
+        "225",
+        "240",
+        "255",
+        "270",
+        "285",
+        "300",
+        "315",
+        "330",
+        "345"
+      ],
+      "bind": {
+        "mouse": {
+          "drag": {
+            "modifier": 0,
+            "coordinate": 0,
+            "step": 10,
+            "orientation": -1
+          }
+        }
+      }
+    },
+    "theta": {
+      "default": 5,
+      "ui": "slider",
+      "values": [
+        "15",
+        "30",
+        "45",
+        "60",
+        "75",
+        "90",
+        "105",
+        "120",
+        "135",
+        "150",
+        "165"
+      ],
+      "bind": {
+        "mouse": {
+          "drag": {
+            "modifier": 0,
+            "coordinate": 1,
+            "step": 30,
+            "orientation": -1
+          }
+        }
+      }
+    },
+    "time": {
+      "loop": "reverse",
+      "ui": "slider",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "tube": {
+      "values": [
+        "on",
+        "off"
+      ]
+    },
+    "volumeIdx": {
+      "ui": "slider",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  },
+  "data": [
+    {
+      "name": "image",
+      "type": "blob",
+      "mimeType": "image/jpg",
+      "pattern": "{time}/{fins}/{tube}/{volumeIdx}/{theta}_{phi}.jpg"
+    }
+  ],
+  "metadata": {
+    "cost": {
+      "image-width": 500,
+      "images": 54912,
+      "space": 348728068,
+      "time": 0
+    },
+    "size": "350.6 MB",
+    "title": "Single pin - long 1x",
+    "description": "Volume rendering of the velocity magnitude using linear transfer function. ne-volvelmag-linear-long-1x"
+  }
+}

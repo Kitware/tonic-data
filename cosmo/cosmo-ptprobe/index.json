@@ -1,0 +1,121 @@
+{
+    "InSituDataProber": {
+        "dimensions": [
+            256,
+            256,
+            256
+        ],
+        "fields": [
+            "SplatterValues"
+        ],
+        "ranges": {
+            "SplatterValues": [
+                0,
+                1
+            ]
+        },
+        "slices": [
+            "slice_0",
+            "slice_1",
+            "slice_2",
+            "slice_3",
+            "slice_4",
+            "slice_5",
+            "slice_6",
+            "slice_7"
+        ],
+        "spacing": [
+            1,
+            1,
+            1
+        ],
+        "sprite_size": 32
+    },
+    "arguments": {
+        "time": {
+            "loop": "modulo",
+            "ui": "slider",
+            "values": [
+                "0",
+                "50",
+                "100",
+                "150",
+                "200",
+                "250",
+                "300",
+                "350",
+                "400",
+                "450"
+            ]
+        }
+    },
+    "arguments_order": [
+        "time"
+    ],
+    "data": [
+        {
+            "mimeType": "image/png",
+            "name": "slice_0",
+            "pattern": "{time}/{field}_0.png",
+            "type": "blob"
+        },
+        {
+            "mimeType": "image/png",
+            "name": "slice_1",
+            "pattern": "{time}/{field}_1.png",
+            "type": "blob"
+        },
+        {
+            "mimeType": "image/png",
+            "name": "slice_2",
+            "pattern": "{time}/{field}_2.png",
+            "type": "blob"
+        },
+        {
+            "mimeType": "image/png",
+            "name": "slice_3",
+            "pattern": "{time}/{field}_3.png",
+            "type": "blob"
+        },
+        {
+            "mimeType": "image/png",
+            "name": "slice_4",
+            "pattern": "{time}/{field}_4.png",
+            "type": "blob"
+        },        {
+            "mimeType": "image/png",
+            "name": "slice_5",
+            "pattern": "{time}/{field}_5.png",
+            "type": "blob"
+        },
+        {
+            "mimeType": "image/png",
+            "name": "slice_6",
+            "pattern": "{time}/{field}_6.png",
+            "type": "blob"
+        },
+        {
+            "mimeType": "image/png",
+            "name": "slice_6",
+            "pattern": "{time}/{field}_6.png",
+            "type": "blob"
+        },
+        {
+            "mimeType": "image/png",
+            "name": "slice_7",
+            "pattern": "{time}/{field}_7.png",
+            "type": "blob"
+        }
+    ],
+    "metadata": {
+        "description": "Some simulation data from HAAC",
+        "id": "cosmo-probe-data",
+        "size": "488.8 MB",
+        "title": "HAAC Probe Data",
+        "type": "probe-slice"
+    },
+    "type": [
+        "tonic-query-data-model",
+        "in-situ-data-prober"
+    ]
+}
