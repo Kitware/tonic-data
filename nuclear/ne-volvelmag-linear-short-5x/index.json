@@ -52,7 +52,7 @@
             "modifier": 0,
             "coordinate": 0,
             "step": 10,
-            "orientation": -1
+            "orientation": 1
           }
         }
       }
@@ -79,7 +79,7 @@
             "modifier": 0,
             "coordinate": 1,
             "step": 30,
-            "orientation": -1
+            "orientation": 1
           }
         }
       }
