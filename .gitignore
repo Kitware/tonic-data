@@ -3,3 +3,6 @@
 *.DS_Store
 *info.json
 xrage-lanl
+.Spotlight-V100
+.Trashes
+.fseventsd
