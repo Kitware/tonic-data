@@ -100,19 +100,19 @@
       ],
       "metadata": {},
       "name": "intensity",
-      "pattern": "{theta}_{phi}/intensity.uint8",
+      "pattern": "{theta}_{phi}/intensity.uint8.gz",
       "type": "array"
     },
     {
       "metadata": {},
       "name": "alpha",
-      "pattern": "{theta}_{phi}/alpha.uint8",
+      "pattern": "{theta}_{phi}/alpha.uint8.gz",
       "type": "array"
     },
     {
       "metadata": {},
       "name": "order",
-      "pattern": "{theta}_{phi}/order.uint8",
+      "pattern": "{theta}_{phi}/order.uint8.gz",
       "type": "array"
     }
   ],

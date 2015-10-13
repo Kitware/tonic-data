@@ -280,7 +280,7 @@
   },
   "data": [
     {
-      "pattern": "{theta}_{phi}/0_bottomDepth.float32",
+      "pattern": "{theta}_{phi}/0_bottomDepth.float32.gz",
       "type": "array",
       "name": "0_bottomDepth",
       "categories": [
@@ -289,7 +289,7 @@
       "metadata": {}
     },
     {
-      "pattern": "{theta}_{phi}/normal.uint8",
+      "pattern": "{theta}_{phi}/normal.uint8.gz",
       "type": "array",
       "name": "normal",
       "categories": [
@@ -298,7 +298,7 @@
       "metadata": {}
     },
     {
-      "pattern": "{theta}_{phi}/5_salinity.float32",
+      "pattern": "{theta}_{phi}/5_salinity.float32.gz",
       "type": "array",
       "name": "5_salinity",
       "categories": [
@@ -307,7 +307,7 @@
       "metadata": {}
     },
     {
-      "pattern": "{theta}_{phi}/4_salinity.float32",
+      "pattern": "{theta}_{phi}/4_salinity.float32.gz",
       "type": "array",
       "name": "4_salinity",
       "categories": [
@@ -316,7 +316,7 @@
       "metadata": {}
     },
     {
-      "pattern": "{theta}_{phi}/2_salinity.float32",
+      "pattern": "{theta}_{phi}/2_salinity.float32.gz",
       "type": "array",
       "name": "2_salinity",
       "categories": [
@@ -325,7 +325,7 @@
       "metadata": {}
     },
     {
-      "pattern": "{theta}_{phi}/1_salinity.float32",
+      "pattern": "{theta}_{phi}/1_salinity.float32.gz",
       "type": "array",
       "name": "1_salinity",
       "categories": [
@@ -334,7 +334,7 @@
       "metadata": {}
     },
     {
-      "pattern": "{theta}_{phi}/intensity.uint8",
+      "pattern": "{theta}_{phi}/intensity.uint8.gz",
       "type": "array",
       "name": "intensity",
       "categories": [
@@ -343,7 +343,7 @@
       "metadata": {}
     },
     {
-      "pattern": "{theta}_{phi}/3_salinity.float32",
+      "pattern": "{theta}_{phi}/3_salinity.float32.gz",
       "type": "array",
       "name": "3_salinity",
       "categories": [
@@ -352,7 +352,7 @@
       "metadata": {}
     },
     {
-      "pattern": "{theta}_{phi}/order.uint8",
+      "pattern": "{theta}_{phi}/order.uint8.gz",
       "type": "array",
       "name": "order",
       "metadata": {}

@@ -46,18 +46,18 @@
     {
       "metadata": {},
       "name": "temperature",
-      "pattern": "{time}/temperature.array",
+      "pattern": "{time}/temperature.array.gz",
       "type": "array"
     },
     {
       "metadata": {},
       "name": "salinity",
-      "pattern": "{time}/salinity.array",
+      "pattern": "{time}/salinity.array.gz",
       "type": "array"
     }
   ],
   "metadata": {
-    "size": "766.1 MB",
+    "size": "37.3 MB",
     "title": "Flat earth probing",
     "description": "Binary floating point arrays"
   },
