@@ -165,116 +165,6 @@
       "ui": "slider",
       "name": "phi",
       "loop": "modulo"
-    },
-    "time": {
-      "values": [
-        "50",
-        "100",
-        "150",
-        "200",
-        "250",
-        "300",
-        "350",
-        "400",
-        "450",
-        "500",
-        "550",
-        "600",
-        "650",
-        "700",
-        "750",
-        "800",
-        "850",
-        "900",
-        "950",
-        "1000",
-        "1050",
-        "1100",
-        "1150",
-        "1200",
-        "1250",
-        "1300",
-        "1350",
-        "1400",
-        "1450",
-        "1500",
-        "1550",
-        "1600",
-        "1650",
-        "1700",
-        "1750",
-        "1800",
-        "1850",
-        "1900",
-        "1950",
-        "2000",
-        "2050",
-        "2100",
-        "2150",
-        "2200",
-        "2250",
-        "2300",
-        "2350",
-        "2400",
-        "2450",
-        "2500",
-        "2550",
-        "2600",
-        "2650",
-        "2700",
-        "2750",
-        "2800",
-        "2850",
-        "2900",
-        "2950",
-        "3000",
-        "3050",
-        "3100",
-        "3150",
-        "3200",
-        "3250",
-        "3300",
-        "3350",
-        "3400",
-        "3450",
-        "3500",
-        "3550",
-        "3600",
-        "3650",
-        "3700",
-        "3750",
-        "3800",
-        "3850",
-        "3900",
-        "3950",
-        "4000",
-        "4050",
-        "4100",
-        "4150",
-        "4200",
-        "4250",
-        "4300",
-        "4350",
-        "4400",
-        "4450",
-        "4500",
-        "4550",
-        "4600",
-        "4650",
-        "4700",
-        "4750",
-        "4800",
-        "4850",
-        "4900",
-        "4950",
-        "5000",
-        "5050",
-        "5100",
-        "5150"
-      ],
-      "ui": "slider",
-      "name": "time",
-      "loop": "modulo"
     }
   },
   "SortedComposite": {
@@ -390,7 +280,7 @@
   },
   "data": [
     {
-      "pattern": "{time}/{theta}_{phi}/0_bottomDepth.float32",
+      "pattern": "{theta}_{phi}/0_bottomDepth.float32",
       "type": "array",
       "name": "0_bottomDepth",
       "categories": [
@@ -399,7 +289,7 @@
       "metadata": {}
     },
     {
-      "pattern": "{time}/{theta}_{phi}/normal.uint8",
+      "pattern": "{theta}_{phi}/normal.uint8",
       "type": "array",
       "name": "normal",
       "categories": [
@@ -408,7 +298,7 @@
       "metadata": {}
     },
     {
-      "pattern": "{time}/{theta}_{phi}/5_salinity.float32",
+      "pattern": "{theta}_{phi}/5_salinity.float32",
       "type": "array",
       "name": "5_salinity",
       "categories": [
@@ -417,7 +307,7 @@
       "metadata": {}
     },
     {
-      "pattern": "{time}/{theta}_{phi}/4_salinity.float32",
+      "pattern": "{theta}_{phi}/4_salinity.float32",
       "type": "array",
       "name": "4_salinity",
       "categories": [
@@ -426,7 +316,7 @@
       "metadata": {}
     },
     {
-      "pattern": "{time}/{theta}_{phi}/2_salinity.float32",
+      "pattern": "{theta}_{phi}/2_salinity.float32",
       "type": "array",
       "name": "2_salinity",
       "categories": [
@@ -435,7 +325,7 @@
       "metadata": {}
     },
     {
-      "pattern": "{time}/{theta}_{phi}/1_salinity.float32",
+      "pattern": "{theta}_{phi}/1_salinity.float32",
       "type": "array",
       "name": "1_salinity",
       "categories": [
@@ -444,7 +334,7 @@
       "metadata": {}
     },
     {
-      "pattern": "{time}/{theta}_{phi}/intensity.uint8",
+      "pattern": "{theta}_{phi}/intensity.uint8",
       "type": "array",
       "name": "intensity",
       "categories": [
@@ -453,7 +343,7 @@
       "metadata": {}
     },
     {
-      "pattern": "{time}/{theta}_{phi}/3_salinity.float32",
+      "pattern": "{theta}_{phi}/3_salinity.float32",
       "type": "array",
       "name": "3_salinity",
       "categories": [
@@ -462,19 +352,18 @@
       "metadata": {}
     },
     {
-      "pattern": "{time}/{theta}_{phi}/order.uint8",
+      "pattern": "{theta}_{phi}/order.uint8",
       "type": "array",
       "name": "order",
       "metadata": {}
     }
   ],
   "arguments_order": [
-    "time",
     "phi",
     "theta"
   ],
   "metadata": {
     "backgroundColor": "rgb(81, 86, 109)",
-    "size": "16.5 GB"
+    "size": "161.0 MB"
   }
 }

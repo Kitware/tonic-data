@@ -1,0 +1,185 @@
+{
+  "type": [
+    "arctic-viewer-list"
+  ],
+  "list": [
+    {
+      "name": "Ocean simulation data",
+      "description": "Simulation performed on 5k cores and generated a composite dataset.",
+      "size": "85.2 GB",
+      "thumbnail": "mpas-composite-hd/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "composite-pipeline"
+      ],
+      "path": "mpas-composite-hd/index.json"
+    },
+    {
+      "name": "3D contours composite",
+      "description": "3D contour of temperature and salinity with normal but no core",
+      "size": "16.0 GB",
+      "thumbnail": "mpas-composite-light-webgl/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "webgl-composite",
+        "sxyz-light"
+      ],
+      "path": "mpas-composite-light-webgl/index.json"
+    },
+    {
+      "name": "Ocean simulation data",
+      "description": "Low resolution composite dataset from MPAS.(JavaScript composite)",
+      "size": "3.0 GB",
+      "thumbnail": "mpas-composite-sd/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "composite-pipeline"
+      ],
+      "path": "mpas-composite-sd/index.json"
+    },
+    {
+      "name": "mpas-contours-sorted-composite",
+      "description": "No description available",
+      "size": "",
+      "thumbnail": "mpas-contours-sorted-composite/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "sorted-composite",
+        "multi-color-by"
+      ],
+      "path": "mpas-contours-sorted-composite/index.json"
+    },
+    {
+      "name": "Composite contours",
+      "description": "Contour on Salinity and Temperature.WebGL RGBD",
+      "size": "4.9 GB",
+      "thumbnail": "mpas-contours-webgl-rgbd/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "webgl-composite",
+        "rgbd"
+      ],
+      "path": "mpas-contours-webgl-rgbd/index.json"
+    },
+    {
+      "name": "Composite contours",
+      "description": "Contour on Salinity and Temperature.",
+      "size": "5.7 GB",
+      "thumbnail": "mpas-contours-webgl-rgbdb/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "webgl-composite",
+        "raw-rgbd"
+      ],
+      "path": "mpas-contours-webgl-rgbdb/index.json"
+    },
+    {
+      "name": "Earth iso-contours",
+      "description": "Image base dataset with 10 contours either on temperature or salinity.",
+      "size": "654.8 MB",
+      "thumbnail": "mpas-data-image/thumbnail.png",
+      "type": [
+        "tonic-query-data-model"
+      ],
+      "path": "mpas-data-image/index.json"
+    },
+    {
+      "name": "High resolution image base",
+      "description": "MPAS simulation on 5k core converted into interactive image stack",
+      "size": "39.7 GB",
+      "thumbnail": "mpas-hd-1000/thumbnail.png",
+      "type": [
+        "tonic-query-data-model"
+      ],
+      "path": "mpas-hd-1000/index.json"
+    },
+    {
+      "name": "High resolution 500x500",
+      "description": "MPAS simulation on 5k core converted to interactive image stack.",
+      "size": "10.3 GB",
+      "thumbnail": "mpas-hd-500/thumbnail.png",
+      "type": [
+        "tonic-query-data-model"
+      ],
+      "path": "mpas-hd-500/index.json"
+    },
+    {
+      "name": "Light data 500x500 - 7 timesteps",
+      "description": "Some simulation data from MPAS",
+      "size": "1.1 GB",
+      "thumbnail": "mpas-hd-500-7t/thumbnail.png",
+      "type": [
+        "tonic-query-data-model"
+      ],
+      "path": "mpas-hd-500-7t/index.json"
+    },
+    {
+      "name": "Ocean simulation data",
+      "description": "Some simulation data from MPAS. Probe dataset for temperature + salinity using PNG encoding for float.",
+      "size": "1.5 GB",
+      "thumbnail": "mpas-probe-big/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "in-situ-data-prober"
+      ],
+      "path": "mpas-probe-big/index.json"
+    },
+    {
+      "name": "Probe Ocean simulation data",
+      "description": "4 Timesteps. Some simulation data from MPAS. Probe dataset for temperature + salinity using PNG encoding for float.",
+      "size": "74.2 MB",
+      "thumbnail": "mpas-probe-data-time/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "in-situ-data-prober"
+      ],
+      "path": "mpas-probe-data-time/index.json"
+    },
+    {
+      "name": "Earth iso-contours",
+      "description": "Image base dataset",
+      "size": "2.4 GB",
+      "thumbnail": "mpas-static-histogram/thumbnail.png",
+      "type": [
+        "tonic-query-data-model"
+      ],
+      "path": "mpas-static-histogram/index.json"
+    },
+    {
+      "name": "Composite contours",
+      "description": "Contour on Salinity and Temperature.WebGL rgbd",
+      "size": "8.4 GB",
+      "thumbnail": "mpas-webgl-data/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "webgl-composite",
+        "rgbd"
+      ],
+      "path": "mpas-webgl-data/index.json"
+    },
+    {
+      "name": "Composite contours",
+      "description": "Contour on Salinity and Temperature.WebGL raw data (RGBD =&gt; binary)",
+      "size": "5.7 GB",
+      "thumbnail": "mpas-webgl-raw-data/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "webgl-composite",
+        "raw-rgbd"
+      ],
+      "path": "mpas-webgl-raw-data/index.json"
+    },
+    {
+      "name": "Flat earth probing",
+      "description": "Binary floating point arrays",
+      "size": "766.1 MB",
+      "thumbnail": "mpas_flat_earth_prober-raw/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "data-prober",
+        "binary"
+      ],
+      "path": "mpas_flat_earth_prober-raw/index.json"
+    }
+  ]
+}
