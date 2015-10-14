@@ -2,7 +2,7 @@
   "LookupTables": {
     "salinity": {
       "range": [
-        34,
+        33,
         38
       ],
       "preset": "yellow2brown"
@@ -24,7 +24,7 @@
     "multi-color-by"
   ],
   "CompositePipeline": {
-    "default_pipeline": "AABBCBDBEBFB",
+    "default_pipeline": "AABCCCDCECFC",
     "layers": [
       "A",
       "B",
@@ -278,18 +278,19 @@
     }
   },
   "SortedComposite": {
+    "activeLookupTable": "salinity",
     "ranges": {
-      "salinity": [
-        24.8574,
-        37.4595
-      ],
-      "temperature": [
-        5,
-        25
-      ],
       "bottomDepth": [
         -9753,
         5984
+      ],
+      "temperature": [
+        0,
+        30
+      ],
+      "salinity": [
+        24.8574,
+        37.4595
       ]
     },
     "layers": 6,
