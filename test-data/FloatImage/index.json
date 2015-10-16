@@ -1,0 +1,388 @@
+{
+  "type": [
+    "tonic-query-data-model",
+    "float-image"
+  ],
+  "FloatImage": {
+    "layers": [
+      {
+        "name": "clip",
+        "arrays": [
+          "Temp",
+          "V",
+          "Pres",
+          "AsH3",
+          "GaMe3",
+          "CH4",
+          "H2"
+        ],
+        "hasMesh": true,
+        "active": true,
+        "array": "Temp",
+        "type": "Float32Array"
+      },
+      {
+        "name": "contour_0.1",
+        "arrays": [
+          "Temp",
+          "V",
+          "Pres",
+          "AsH3",
+          "GaMe3",
+          "CH4",
+          "H2"
+        ],
+        "hasMesh": true,
+        "active": true,
+        "array": "Temp",
+        "type": "Float32Array"
+      },
+      {
+        "name": "contour_0.14",
+        "arrays": [
+          "Temp",
+          "V",
+          "Pres",
+          "AsH3",
+          "GaMe3",
+          "CH4",
+          "H2"
+        ],
+        "hasMesh": true,
+        "active": true,
+        "array": "Temp",
+        "type": "Float32Array"
+      }
+    ],
+    "ranges": {
+      "Temp": [
+        293.1499938964844,
+        913.1500244140625
+      ],
+      "H2": [
+        0.8076131343841553,
+        0.9176878929138184
+      ],
+      "CH4": [
+        0,
+        0.0011702391784638166
+      ],
+      "V": [
+        -19.949113845825195,
+        19.949113845825195
+      ],
+      "GaMe3": [
+        0.00022284436272457242,
+        0.007213925942778587
+      ],
+      "Pres": [
+        0.006785521749407053,
+        0.028818512335419655
+      ],
+      "AsH3": [
+        0.08047682046890259,
+        0.18483947217464447
+      ]
+    },
+    "dimensions": [
+      400,
+      630
+    ]
+  },
+  "arguments": {
+    "theta": {
+      "default": 1,
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 1,
+            "step": 30,
+            "modifier": 0,
+            "orientation": 1
+          }
+        }
+      },
+      "ui": "slider",
+      "name": "theta",
+      "values": [
+        "80",
+        "90",
+        "100"
+      ]
+    },
+    "phi": {
+      "values": [
+        "-10",
+        "0",
+        "10"
+      ],
+      "ui": "slider",
+      "name": "phi",
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 0,
+            "step": 30,
+            "modifier": 0,
+            "orientation": 1
+          }
+        }
+      }
+    }
+  },
+  "data": [
+    {
+      "pattern": "{theta}_{phi}/contour_0.14_Temp.array",
+      "type": "array",
+      "name": "contour_0.14_Temp",
+      "categories": [
+        "contour_0.14_Temp"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/clip_GaMe3.array",
+      "type": "array",
+      "name": "clip_GaMe3",
+      "categories": [
+        "clip_GaMe3"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/clip_AsH3.array",
+      "type": "array",
+      "name": "clip_AsH3",
+      "categories": [
+        "clip_AsH3"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/clip_V.array",
+      "type": "array",
+      "name": "clip_V",
+      "categories": [
+        "clip_V"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.14_GaMe3.array",
+      "type": "array",
+      "name": "contour_0.14_GaMe3",
+      "categories": [
+        "contour_0.14_GaMe3"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.1__mesh.array",
+      "type": "array",
+      "name": "contour_0.1__mesh",
+      "categories": [
+        "contour_0.1__mesh"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.1_H2.array",
+      "type": "array",
+      "name": "contour_0.1_H2",
+      "categories": [
+        "contour_0.1_H2"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.1_GaMe3.array",
+      "type": "array",
+      "name": "contour_0.1_GaMe3",
+      "categories": [
+        "contour_0.1_GaMe3"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/clip_Temp.array",
+      "type": "array",
+      "name": "clip_Temp",
+      "categories": [
+        "clip_Temp"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.14_H2.array",
+      "type": "array",
+      "name": "contour_0.14_H2",
+      "categories": [
+        "contour_0.14_H2"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.1_Temp.array",
+      "type": "array",
+      "name": "contour_0.1_Temp",
+      "categories": [
+        "contour_0.1_Temp"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.14_Pres.array",
+      "type": "array",
+      "name": "contour_0.14_Pres",
+      "categories": [
+        "contour_0.14_Pres"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.1_CH4.array",
+      "type": "array",
+      "name": "contour_0.1_CH4",
+      "categories": [
+        "contour_0.1_CH4"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.14_CH4.array",
+      "type": "array",
+      "name": "contour_0.14_CH4",
+      "categories": [
+        "contour_0.14_CH4"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/clip_CH4.array",
+      "type": "array",
+      "name": "clip_CH4",
+      "categories": [
+        "clip_CH4"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.1__light.array",
+      "type": "array",
+      "name": "contour_0.1__light",
+      "categories": [
+        "contour_0.1__light"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.1_Pres.array",
+      "type": "array",
+      "name": "contour_0.1_Pres",
+      "categories": [
+        "contour_0.1_Pres"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.14_AsH3.array",
+      "type": "array",
+      "name": "contour_0.14_AsH3",
+      "categories": [
+        "contour_0.14_AsH3"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/clip_Pres.array",
+      "type": "array",
+      "name": "clip_Pres",
+      "categories": [
+        "clip_Pres"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.14__mesh.array",
+      "type": "array",
+      "name": "contour_0.14__mesh",
+      "categories": [
+        "contour_0.14__mesh"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.1_V.array",
+      "type": "array",
+      "name": "contour_0.1_V",
+      "categories": [
+        "contour_0.1_V"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.14__light.array",
+      "type": "array",
+      "name": "contour_0.14__light",
+      "categories": [
+        "contour_0.14__light"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.1_AsH3.array",
+      "type": "array",
+      "name": "contour_0.1_AsH3",
+      "categories": [
+        "contour_0.1_AsH3"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/clip__mesh.array",
+      "type": "array",
+      "name": "clip__mesh",
+      "categories": [
+        "clip__mesh"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/clip__light.array",
+      "type": "array",
+      "name": "clip__light",
+      "categories": [
+        "clip__light"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/clip_H2.array",
+      "type": "array",
+      "name": "clip_H2",
+      "categories": [
+        "clip_H2"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{theta}_{phi}/contour_0.14_V.array",
+      "type": "array",
+      "name": "contour_0.14_V",
+      "categories": [
+        "contour_0.14_V"
+      ],
+      "metadata": {}
+    }
+  ],
+  "arguments_order": [
+    "phi",
+    "theta"
+  ],
+  "metadata": {
+    "backgroundColor": "rgb(0, 0, 0)",
+    "size": "17.8 MB",
+    "title": "Diskout - FloatImage",
+    "description": "Simple test dataset"
+  }
+}

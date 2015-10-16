@@ -1,0 +1,132 @@
+{
+  "type": [
+    "arctic-viewer-list"
+  ],
+  "list": [
+    {
+      "name": "Flat earth probing",
+      "description": "Binary floating point arrays",
+      "size": "766.1 MB",
+      "thumbnail": "BinaryDataProber/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "data-prober",
+        "binary"
+      ],
+      "path": "BinaryDataProber/index.json"
+    },
+    {
+      "name": "Composite",
+      "description": "Full JavaScript implementation with composite.json data.",
+      "size": "9.9 MB",
+      "thumbnail": "Composite/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "composite-pipeline"
+      ],
+      "path": "Composite/index.json"
+    },
+    {
+      "name": "Ocean simulation data",
+      "description": "Some simulation data from MPAS",
+      "size": "17.3 MB",
+      "thumbnail": "DataProber/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "in-situ-data-prober"
+      ],
+      "path": "DataProber/index.json"
+    },
+    {
+      "name": "Composite RGBD ",
+      "description": "Using a single PNG sprite",
+      "size": "3.5 MB",
+      "thumbnail": "DepthComposite/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "webgl-composite",
+        "rgbd"
+      ],
+      "path": "DepthComposite/index.json"
+    },
+    {
+      "name": "Composite rgbd-bin",
+      "description": "Contour on Salinity and Temperature.",
+      "size": "22.0 MB",
+      "thumbnail": "DepthComposite-binary/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "webgl-composite",
+        "raw-rgbd"
+      ],
+      "path": "DepthComposite-binary/index.json"
+    },
+    {
+      "name": "3D composite - sxyz-light",
+      "description": "contour set",
+      "size": "1.0 MB",
+      "thumbnail": "DepthComposite-sxyz-light/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "webgl-composite",
+        "sxyz-light"
+      ],
+      "path": "DepthComposite-sxyz-light/index.json"
+    },
+    {
+      "name": "Ensemble demo",
+      "description": "No description available",
+      "size": "98.3 MB",
+      "thumbnail": "Ensemble/thumbnail.png",
+      "type": [
+        "ensemble-dataset"
+      ],
+      "path": "Ensemble/index.json"
+    },
+    {
+      "name": "Diskout - FloatImage",
+      "description": "Simple test dataset",
+      "size": "17.8 MB",
+      "thumbnail": "FloatImage/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "float-image"
+      ],
+      "path": "FloatImage/index.json"
+    },
+    {
+      "name": "MultiColorBySortedComposite",
+      "description": "No description available",
+      "size": "161.0 MB",
+      "thumbnail": "MultiColorBySortedComposite/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "sorted-composite",
+        "multi-color-by"
+      ],
+      "path": "MultiColorBySortedComposite/index.json"
+    },
+    {
+      "name": "Earth iso-contours",
+      "description": "Show the computational mesh with temperature and salinity iso-lines for the 40 layers and 120 time steps.",
+      "size": "6.5 MB",
+      "thumbnail": "QueryDataModel/thumbnail.png",
+      "type": [
+        "tonic-query-data-model"
+      ],
+      "path": "QueryDataModel/index.json"
+    },
+    {
+      "name": "Frozen head CT ",
+      "description": "3 features",
+      "size": "141.7 MB",
+      "thumbnail": "SortedComposite/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "sorted-composite",
+        "alpha"
+      ],
+      "path": "SortedComposite/index.json"
+    }
+  ]
+}

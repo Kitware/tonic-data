@@ -1,0 +1,8 @@
+!index.json
+!thumbnail.png
+*.DS_Store
+info.json
+[0-9]*
+composite.json
+composite.json.gz
+rgb.jpg

@@ -1,0 +1,379 @@
+{
+  "LookupTables": {
+    "salinity": {
+      "range": [
+        33,
+        38
+      ],
+      "preset": "yellow2brown"
+    },
+    "temperature": {
+      "range": [
+        5,
+        30
+      ],
+      "preset": "ocean"
+    },
+    "bottomDepth": {
+      "preset": "earth"
+    }
+  },
+  "type": [
+    "tonic-query-data-model",
+    "sorted-composite",
+    "multi-color-by"
+  ],
+  "CompositePipeline": {
+    "default_pipeline": "AABCCCDCECFC",
+    "layers": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "pipeline": [
+      {
+        "name": "Earth",
+        "ids": [
+          "A"
+        ]
+      },
+      {
+        "children": [
+          {
+            "name": "5C",
+            "ids": [
+              "B"
+            ]
+          },
+          {
+            "name": "10C",
+            "ids": [
+              "C"
+            ]
+          },
+          {
+            "name": "15C",
+            "ids": [
+              "D"
+            ]
+          },
+          {
+            "name": "20C",
+            "ids": [
+              "E"
+            ]
+          },
+          {
+            "name": "25C",
+            "ids": [
+              "F"
+            ]
+          }
+        ],
+        "name": "Temperatures",
+        "ids": [
+          "B",
+          "C",
+          "D",
+          "E",
+          "F"
+        ]
+      }
+    ],
+    "layer_fields": {
+      "A": [
+        "A"
+      ],
+      "C": [
+        "B",
+        "C"
+      ],
+      "B": [
+        "B",
+        "C"
+      ],
+      "E": [
+        "B",
+        "C"
+      ],
+      "D": [
+        "B",
+        "C"
+      ],
+      "F": [
+        "B",
+        "C"
+      ]
+    },
+    "fields": {
+      "A": "bottomDepth",
+      "C": "salinity",
+      "B": "temperature"
+    }
+  },
+  "arguments": {
+    "theta": {
+      "default": 2,
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 1,
+            "step": 30,
+            "modifier": 0,
+            "orientation": 1
+          }
+        }
+      },
+      "ui": "slider",
+      "name": "theta",
+      "values": [
+        "30",
+        "60",
+        "90",
+        "120",
+        "150"
+      ]
+    },
+    "phi": {
+      "values": [
+        "0",
+        "30",
+        "60",
+        "90",
+        "120",
+        "150",
+        "180",
+        "210",
+        "240",
+        "270",
+        "300",
+        "330"
+      ],
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 0,
+            "step": 30,
+            "modifier": 0,
+            "orientation": 1
+          }
+        }
+      },
+      "ui": "slider",
+      "name": "phi",
+      "loop": "modulo"
+    },
+    "time": {
+      "values": [
+        "50"
+      ],
+      "ui": "slider",
+      "name": "time",
+      "loop": "modulo"
+    }
+  },
+  "SortedComposite": {
+    "activeLookupTable": "salinity",
+    "ranges": {
+      "bottomDepth": [
+        -9753,
+        5984
+      ],
+      "temperature": [
+        0,
+        30
+      ],
+      "salinity": [
+        24.8574,
+        37.4595
+      ]
+    },
+    "layers": 6,
+    "pipeline": [
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "bottomDepth"
+          }
+        ],
+        "name": "Earth"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "const",
+            "name": "temperature",
+            "value": 5
+          },
+          {
+            "type": "field",
+            "name": "salinity"
+          }
+        ],
+        "name": "5C",
+        "parent": "Temperatures"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "const",
+            "name": "temperature",
+            "value": 10
+          },
+          {
+            "type": "field",
+            "name": "salinity"
+          }
+        ],
+        "name": "10C",
+        "parent": "Temperatures"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "const",
+            "name": "temperature",
+            "value": 15
+          },
+          {
+            "type": "field",
+            "name": "salinity"
+          }
+        ],
+        "name": "15C",
+        "parent": "Temperatures"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "const",
+            "name": "temperature",
+            "value": 20
+          },
+          {
+            "type": "field",
+            "name": "salinity"
+          }
+        ],
+        "name": "20C",
+        "parent": "Temperatures"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "const",
+            "name": "temperature",
+            "value": 25
+          },
+          {
+            "type": "field",
+            "name": "salinity"
+          }
+        ],
+        "name": "25C",
+        "parent": "Temperatures"
+      }
+    ],
+    "dimensions": [
+      500,
+      500
+    ],
+    "light": [
+      "intensity",
+      "normal"
+    ]
+  },
+  "data": [
+    {
+      "pattern": "{time}/{theta}_{phi}/0_bottomDepth.float32",
+      "type": "array",
+      "name": "0_bottomDepth",
+      "categories": [
+        "0_bottomDepth"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/normal.uint8",
+      "type": "array",
+      "name": "normal",
+      "categories": [
+        "normal"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/5_salinity.float32",
+      "type": "array",
+      "name": "5_salinity",
+      "categories": [
+        "5_salinity"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/4_salinity.float32",
+      "type": "array",
+      "name": "4_salinity",
+      "categories": [
+        "4_salinity"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/2_salinity.float32",
+      "type": "array",
+      "name": "2_salinity",
+      "categories": [
+        "2_salinity"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/1_salinity.float32",
+      "type": "array",
+      "name": "1_salinity",
+      "categories": [
+        "1_salinity"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/intensity.uint8",
+      "type": "array",
+      "name": "intensity",
+      "categories": [
+        "intensity"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/3_salinity.float32",
+      "type": "array",
+      "name": "3_salinity",
+      "categories": [
+        "3_salinity"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/order.uint8",
+      "type": "array",
+      "name": "order",
+      "metadata": {}
+    }
+  ],
+  "arguments_order": [
+    "time",
+    "phi",
+    "theta"
+  ],
+  "metadata": {
+    "backgroundColor": "rgb(81, 86, 109)",
+    "size": "161.0 MB"
+  }
+}
