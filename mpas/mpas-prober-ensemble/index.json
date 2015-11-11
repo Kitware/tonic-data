@@ -1,0 +1,57 @@
+{
+  "type": [
+    "ensemble-dataset"
+  ],
+  "Ensemble": {
+    "datasets": [
+      {
+        "name": "EarthA",
+        "data": "prober/index.json"
+      },
+      {
+        "name": "EarthB",
+        "data": "prober/index.json"
+      }
+    ],
+    "binding": [
+      {
+        "datasets": [
+          "EarthA",
+          "EarthB"
+        ],
+        "arguments": [],
+        "other": [
+          {
+            "listener": "onRenderMethodChange",
+            "setter": "setRenderMethod"
+          },
+          {
+            "listener": "onCrosshairVisibilityChange",
+            "setter": "setCrossHairEnable"
+          }
+        ]
+      }
+    ],
+    "operators": [
+      {
+        "name": "Earth Operator A",
+        "datasets": [
+          "EarthA",
+          "EarthB"
+        ],
+        "operation": "EarthA - EarthB"
+      },
+      {
+        "name": "Earth Operator B",
+        "datasets": [
+          "EarthA",
+          "EarthB"
+        ],
+        "operation": "2*(EarthA - EarthB)"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Earth ensemble"
+  }
+}

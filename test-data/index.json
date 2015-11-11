@@ -95,6 +95,36 @@
       "path": "FloatImage/index.json"
     },
     {
+      "name": "Geometry-can",
+      "description": "No description available",
+      "size": "",
+      "type": [
+        "tonic-query-data-model",
+        "geometry"
+      ],
+      "path": "Geometry-can/index.json"
+    },
+    {
+      "name": "Geometry-diskout",
+      "description": "No description available",
+      "size": "",
+      "type": [
+        "tonic-query-data-model",
+        "geometry"
+      ],
+      "path": "Geometry-diskout/index.json"
+    },
+    {
+      "name": "Geometry-diskout-multi-contour",
+      "description": "No description available",
+      "size": "",
+      "type": [
+        "tonic-query-data-model",
+        "geometry"
+      ],
+      "path": "Geometry-diskout-multi-contour/index.json"
+    },
+    {
       "name": "MultiColorBySortedComposite",
       "description": "No description available",
       "size": "161.0 MB",

@@ -1,0 +1,42 @@
+{
+  "type": [
+    "ensemble-dataset"
+  ],
+  "Ensemble": {
+    "datasets": [
+      {
+        "name": "VelocityA",
+        "data": "hi-res-vel/index.json"
+      },
+      {
+        "name": "VelocityB",
+        "data": "hi-res-vel/index.json"
+      }
+    ],
+    "binding": [
+      {
+        "datasets": [
+          "VelocityA",
+          "VelocityB"
+        ],
+        "arguments": [
+          "phi",
+          "theta"
+        ]
+      }
+    ],
+    "operators": [
+      {
+        "name": "Velocity diff",
+        "datasets": [
+          "VelocityA",
+          "VelocityB"
+        ],
+        "operation": "128 + 2*(VelocityA - VelocityB)"
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Ensemble Vessel"
+  }
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "fields": {
+            "Pres": "fields/Pres_52cf9cf0e50282eb048917c27ccdfc65.Float32Array", 
+            "Temp": "fields/Temp_94321afca1cbb5233740e54a8d49f61b.Float32Array"
+        }, 
+        "points": "points/cbaa261812f06bc61c7427369fe93bca.Float32Array", 
+        "name": "Stream lines", 
+        "index": "index/a6689830800d0d665bf587c6dde2088c.Uint32Array"
+    }, 
+    {
+        "fields": {
+            "Pres": "fields/Pres_8ffe43b078bc0fd9d66fbd69211ec9b0.Float32Array", 
+            "Temp": "fields/Temp_8d1a0f68e3bb3c27d910dac4ad444504.Float32Array"
+        }, 
+        "points": "points/15876155093710e0a46c6e77ea696b15.Float32Array", 
+        "name": "Clip", 
+        "index": "index/44596dc19c74f482ad0395f1b010ca4e.Uint32Array"
+    }, 
+    {
+        "fields": {
+            "Pres": "fields/Pres_b857ee76aabb22aed353fe2a6b647bb9.Float32Array", 
+            "Temp": "fields/Temp_8f786b19f737f324d39e9c693a123cd7.Float32Array", 
+            "AsH3": "fields/AsH3_4438e03a73aeb7e02a5c99a34201452a.Float32Array"
+        }, 
+        "points": "points/e235f0fe13ab807f714510be5a29812a.Float32Array", 
+        "name": "AsH3 0.1", 
+        "index": "index/cdc92cf62dedaa88d4dd9e62c557790b.Uint32Array"
+    }, 
+    {
+        "fields": {
+            "Pres": "fields/Pres_fe59834797117ece2b90e79820069fb2.Float32Array", 
+            "Temp": "fields/Temp_7a2d2ae097f05e5417cce10922504f65.Float32Array", 
+            "AsH3": "fields/AsH3_2220e378df5d27fc721c7b3d391a3ac4.Float32Array"
+        }, 
+        "points": "points/d32b8b8252c9ff72e790be48472eff37.Float32Array", 
+        "name": "AsH3 0.14", 
+        "index": "index/a49f6184b176eb3d6d0a74ada1f60375.Uint32Array"
+    }, 
+    {
+        "fields": {
+            "Pres": "fields/Pres_64154d5a6cfe6f1d7cd7015a0b866b74.Float32Array", 
+            "Temp": "fields/Temp_7e4e7a9f9012ea7761b8b80c09d1d235.Float32Array", 
+            "AsH3": "fields/AsH3_9ddf99bc7891c01d73b9856067d0a53d.Float32Array"
+        }, 
+        "points": "points/49ff63e1fc5a01a410e42e742584b84c.Float32Array", 
+        "name": "AsH3 0.18", 
+        "index": "index/1fcadaf3e21dcf6262e89edada3b61c3.Uint32Array"
+    }
+]
