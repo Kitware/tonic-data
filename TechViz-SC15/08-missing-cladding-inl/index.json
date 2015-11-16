@@ -1,0 +1,311 @@
+{
+  "FloatImage": {
+    "dimensions": [
+      200,
+      900
+    ],
+    "layers": [
+      {
+        "active": true,
+        "array": "temp",
+        "arrays": [
+          "temp",
+          "fission_rate"
+        ],
+        "hasMesh": true,
+        "name": "shell",
+        "type": "Float32Array"
+      },
+      {
+        "active": true,
+        "array": "temp",
+        "arrays": [
+          "temp",
+          "burnup"
+        ],
+        "hasMesh": true,
+        "name": "rod",
+        "type": "Float32Array"
+      }
+    ],
+    "ranges": {
+      "burnup": [
+        0,
+        0.03915101642441825
+      ],
+      "fission_rate": [
+        0,
+        0
+      ],
+      "temp": [
+        300,
+        1635.7730517148655
+      ]
+    }
+  },
+  "arguments": {
+    "phi": {
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 0,
+            "modifier": 0,
+            "orientation": 1,
+            "step": 30
+          }
+        }
+      },
+      "name": "phi",
+      "ui": "slider",
+      "default": 1,
+      "values": [
+        "-10",
+        "0",
+        "10"
+      ]
+    },
+    "theta": {
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 1,
+            "modifier": 0,
+            "orientation": 1,
+            "step": 30
+          }
+        }
+      },
+      "default": 1,
+      "name": "theta",
+      "ui": "slider",
+      "values": [
+        "80",
+        "90",
+        "100"
+      ]
+    },
+    "time": {
+      "loop": "modulo",
+      "name": "time",
+      "ui": "slider",
+      "values": [
+        "0.0",
+        "1000.0",
+        "3000.0",
+        "7000.0",
+        "15000.0",
+        "31000.0",
+        "63000.0",
+        "95000.0",
+        "127000.0",
+        "159000.0",
+        "223000.0",
+        "351000.0",
+        "607000.0",
+        "735000.0",
+        "991000.0",
+        "1503000.0",
+        "2503000.0",
+        "3503000.0",
+        "4503000.0",
+        "5503000.0",
+        "6503000.0",
+        "7503000.0",
+        "8503000.0",
+        "9503000.0",
+        "10503000.0",
+        "11503000.0",
+        "12503000.0",
+        "13503000.0",
+        "14503000.0",
+        "15503000.0",
+        "16503000.0",
+        "17503000.0",
+        "18503000.0",
+        "19503000.0",
+        "20503000.0",
+        "21503000.0",
+        "22503000.0",
+        "23503000.0",
+        "24503000.0",
+        "25503000.0",
+        "26503000.0",
+        "27503000.0",
+        "28503000.0",
+        "29503000.0",
+        "30503000.0",
+        "31503000.0",
+        "32503000.0",
+        "33503000.0",
+        "34503000.0",
+        "35503000.0",
+        "36503000.0",
+        "37503000.0",
+        "38503000.0",
+        "39503000.0",
+        "40503000.0",
+        "41503000.0",
+        "42503000.0",
+        "43503000.0",
+        "44503000.0",
+        "45503000.0",
+        "46503000.0",
+        "47503000.0",
+        "48503000.0",
+        "49503000.0",
+        "50503000.0",
+        "51503000.0",
+        "52503000.0",
+        "53503000.0",
+        "54503000.0",
+        "55503000.0",
+        "56503000.0",
+        "57503000.0",
+        "58503000.0",
+        "59503000.0",
+        "60503000.0",
+        "61503000.0",
+        "62503000.0",
+        "63503000.0",
+        "64503000.0",
+        "65503000.0",
+        "66503000.0",
+        "67503000.0",
+        "68503000.0",
+        "69503000.0",
+        "70000000.0",
+        "70001000.0",
+        "70003000.0",
+        "70007000.0",
+        "70015000.0",
+        "70023000.0",
+        "70027000.0",
+        "70029000.0",
+        "70031000.0",
+        "70033000.0",
+        "70035000.0",
+        "70036000.0",
+        "70037000.0",
+        "70038000.0",
+        "70039000.0",
+        "70040000.0",
+        "70041000.0",
+        "70042000.0",
+        "70043000.0",
+        "70043500.0",
+        "70044000.0",
+        "70044500.0",
+        "70045000.0",
+        "70045500.0",
+        "70046000.0",
+        "70046500.0",
+        "70047000.0",
+        "70047500.0",
+        "70048000.0",
+        "70048500.0",
+        "70049000.0",
+        "70049500.0",
+        "70050000.0",
+        "70050500.0",
+        "70051500.0",
+        "70053500.0",
+        "70057500.0",
+        "70065500.0",
+        "70081500.0",
+        "70097500.0",
+        "70113500.0",
+        "70145500.0",
+        "70150000.0"
+      ]
+    }
+  },
+  "arguments_order": [
+    "time",
+    "phi",
+    "theta"
+  ],
+  "data": [
+    {
+      "metadata": {},
+      "categories": [
+        "shell__mesh"
+      ],
+      "name": "shell__mesh",
+      "pattern": "{time}/{theta}_{phi}/shell__mesh.array",
+      "type": "array"
+    },
+    {
+      "metadata": {},
+      "categories": [
+        "shell__light"
+      ],
+      "name": "shell__light",
+      "pattern": "{time}/{theta}_{phi}/shell__light.array",
+      "type": "array"
+    },
+    {
+      "metadata": {},
+      "categories": [
+        "shell_temp"
+      ],
+      "name": "shell_temp",
+      "pattern": "{time}/{theta}_{phi}/shell_temp.array",
+      "type": "array"
+    },
+    {
+      "metadata": {},
+      "categories": [
+        "rod__mesh"
+      ],
+      "name": "rod__mesh",
+      "pattern": "{time}/{theta}_{phi}/rod__mesh.array",
+      "type": "array"
+    },
+    {
+      "metadata": {},
+      "categories": [
+        "rod_temp"
+      ],
+      "name": "rod_temp",
+      "pattern": "{time}/{theta}_{phi}/rod_temp.array",
+      "type": "array"
+    },
+    {
+      "metadata": {},
+      "categories": [
+        "shell_fission_rate"
+      ],
+      "name": "shell_fission_rate",
+      "pattern": "{time}/{theta}_{phi}/shell_fission_rate.array",
+      "type": "array"
+    },
+    {
+      "metadata": {},
+      "categories": [
+        "rod_burnup"
+      ],
+      "name": "rod_burnup",
+      "pattern": "{time}/{theta}_{phi}/rod_burnup.array",
+      "type": "array"
+    },
+    {
+      "metadata": {},
+      "categories": [
+        "rod__light"
+      ],
+      "name": "rod__light",
+      "pattern": "{time}/{theta}_{phi}/rod__light.array",
+      "type": "array"
+    }
+  ],
+  "metadata": {
+    "backgroundColor": "rgb(0, 0, 0)",
+    "size": "421.6 MB",
+    "title": "Missing cladding",
+    "description": "INL - MOOSE framework - Temperature within a Rod - D. Gaston et al."
+  },
+  "type": [
+    "tonic-query-data-model",
+    "float-image"
+  ]
+}

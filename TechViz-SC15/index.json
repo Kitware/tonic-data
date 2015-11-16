@@ -1,0 +1,142 @@
+{
+  "type": [
+    "arctic-viewer-list"
+  ],
+  "list": [
+    {
+      "name": "Vessel - Hyrda TH",
+      "description": "No description available",
+      "size": "505.7 MB",
+      "thumbnail": "01-vessel-hydra/thumbnail.jpg",
+      "type": [
+        "tonic-query-data-model"
+      ],
+      "path": "01-vessel-hydra/index.json"
+    },
+    {
+      "name": "High resolution MPAS",
+      "description": "MPAS simulation on 5k core converted to interactive image stack.",
+      "size": "10.3 GB",
+      "thumbnail": "02-mpas-5k/thumbnail.png",
+      "type": [
+        "tonic-query-data-model"
+      ],
+      "path": "02-mpas-5k/index.json"
+    },
+    {
+      "name": "Diskout composite with normal",
+      "description": "contour set",
+      "size": "466.1 MB",
+      "thumbnail": "03-diskout-composite/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "webgl-composite",
+        "sxyz-light"
+      ],
+      "path": "03-diskout-composite/index.json"
+    },
+    {
+      "name": "Frozen head CT ",
+      "description": "3 features",
+      "size": "141.7 MB",
+      "thumbnail": "04-ct-scan/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "sorted-composite",
+        "alpha"
+      ],
+      "path": "04-ct-scan/index.json"
+    },
+    {
+      "name": "SuperNova - 6 features",
+      "description": "6 Features - SciDAC - Dr. John M. Blondin at the North Carolina State University",
+      "size": "8.5 GB",
+      "thumbnail": "05-SuperNova-6ft/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "sorted-composite",
+        "alpha"
+      ],
+      "path": "05-SuperNova-6ft/index.json"
+    },
+    {
+      "name": "Combustion - Jet simulation",
+      "description": "SciDAC - Dr Jackie Chen - Sandia National Lab",
+      "size": "15.2 GB",
+      "thumbnail": "06-combustion-jet-engine/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "sorted-composite",
+        "multi-color-by"
+      ],
+      "path": "06-combustion-jet-engine/index.json"
+    },
+    {
+      "name": "Vessel - HydraTH",
+      "description": "Anomalies pressure contrours",
+      "size": "6.6 GB",
+      "thumbnail": "07-vessel-composite/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "sorted-composite",
+        "multi-color-by"
+      ],
+      "path": "07-vessel-composite/index.json"
+    },
+    {
+      "name": "Missing cladding",
+      "description": "INL - MOOSE framework - Temperature within a Rod - D. Gaston et al.",
+      "size": "421.6 MB",
+      "thumbnail": "08-missing-cladding-inl/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "float-image"
+      ],
+      "path": "08-missing-cladding-inl/index.json"
+    },
+    {
+      "name": "Flat earth probing",
+      "description": "Binary floating point arrays",
+      "size": "766.1 MB",
+      "thumbnail": "09-earth-prober/thumbnail.png",
+      "type": [
+        "tonic-query-data-model",
+        "data-prober",
+        "binary"
+      ],
+      "path": "09-earth-prober/index.json"
+    },
+    {
+      "name": "Can - Geometry",
+      "description": "No description available",
+      "size": "5.2 MB",
+      "thumbnail": "10-can-geometry/thumbnail.jpg",
+      "type": [
+        "tonic-query-data-model",
+        "geometry"
+      ],
+      "path": "10-can-geometry/index.json"
+    },
+    {
+      "name": "Diskout - Geometry",
+      "description": "No description available",
+      "size": "3.3 MB",
+      "thumbnail": "11-diskout-geometry/thumbnail.jpg",
+      "type": [
+        "tonic-query-data-model",
+        "geometry"
+      ],
+      "path": "11-diskout-geometry/index.json"
+    },
+    {
+      "name": "Ensemble Vessel",
+      "description": "No description available",
+      "size": "505.8 MB",
+      "thumbnail": "12-ensemble-vessel/thumbnail.jpg",
+      "type": [
+        "ensemble-dataset"
+      ],
+      "path": "12-ensemble-vessel/index.json"
+    }
+  ]
+}

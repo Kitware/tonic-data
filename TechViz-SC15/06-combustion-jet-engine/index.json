@@ -1,0 +1,440 @@
+{
+  "LookupTables": {
+    "ImageFile": {
+      "preset": "spectralflip",
+      "range": [0, 1]
+    }
+  },
+  "CompositePipeline": {
+    "default_pipeline": "AABACADAEA",
+    "layers": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "pipeline": [
+      {
+        "children": [
+          {
+            "name": "0.1",
+            "ids": [
+              "A"
+            ]
+          },
+          {
+            "name": "0.6",
+            "ids": [
+              "B"
+            ]
+          },
+          {
+            "name": "0.75",
+            "ids": [
+              "C"
+            ]
+          },
+          {
+            "name": "0.85",
+            "ids": [
+              "D"
+            ]
+          },
+          {
+            "name": "1.00967",
+            "ids": [
+              "E"
+            ]
+          }
+        ],
+        "name": "Contours mixfrac",
+        "ids": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    ],
+    "layer_fields": {
+      "A": [
+        "A"
+      ],
+      "C": [
+        "A"
+      ],
+      "B": [
+        "A"
+      ],
+      "E": [
+        "A"
+      ],
+      "D": [
+        "A"
+      ]
+    },
+    "fields": {
+      "A": "ImageFile"
+    }
+  },
+  "type": [
+    "tonic-query-data-model",
+    "sorted-composite",
+    "multi-color-by"
+  ],
+  "arguments": {
+    "theta": {
+      "default": 6,
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 1,
+            "step": 30,
+            "modifier": 0,
+            "orientation": 1
+          }
+        }
+      },
+      "ui": "slider",
+      "name": "theta",
+      "values": [
+        "0",
+        "15",
+        "30",
+        "45",
+        "60",
+        "75",
+        "90",
+        "105",
+        "120",
+        "135",
+        "150",
+        "165",
+        "180"
+      ]
+    },
+    "phi": {
+      "values": [
+        "0",
+        "15",
+        "30",
+        "45",
+        "60",
+        "75",
+        "90",
+        "105",
+        "120",
+        "135",
+        "150",
+        "165",
+        "180",
+        "195",
+        "210",
+        "225",
+        "240",
+        "255",
+        "270",
+        "285",
+        "300",
+        "315",
+        "330",
+        "345"
+      ],
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 0,
+            "step": 30,
+            "modifier": 0,
+            "orientation": 1
+          }
+        }
+      },
+      "ui": "slider",
+      "name": "phi",
+      "loop": "modulo"
+    },
+    "time": {
+      "values": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "89",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "97",
+        "98",
+        "99",
+        "100",
+        "101",
+        "102",
+        "103",
+        "104",
+        "105",
+        "106",
+        "107",
+        "108",
+        "109",
+        "110",
+        "111",
+        "112",
+        "113",
+        "114",
+        "115",
+        "116",
+        "117",
+        "118",
+        "119",
+        "120",
+        "121",
+        "122"
+      ],
+      "ui": "slider",
+      "name": "time",
+      "loop": "modulo"
+    }
+  },
+  "SortedComposite": {
+    "ranges": {
+      "ImageFile": [
+        -0.0120578,
+        1.00967
+      ]
+    },
+    "layers": 5,
+    "pipeline": [
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "ImageFile"
+          }
+        ],
+        "name": "0.1",
+        "parent": "Contours mixfrac"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "ImageFile"
+          }
+        ],
+        "name": "0.6",
+        "parent": "Contours mixfrac"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "ImageFile"
+          }
+        ],
+        "name": "0.75",
+        "parent": "Contours mixfrac"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "ImageFile"
+          }
+        ],
+        "name": "0.85",
+        "parent": "Contours mixfrac"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "ImageFile"
+          }
+        ],
+        "name": "1.00967",
+        "parent": "Contours mixfrac"
+      }
+    ],
+    "dimensions": [
+      500,
+      500
+    ],
+    "light": [
+      "intensity",
+      "normal"
+    ]
+  },
+  "data": [
+    {
+      "pattern": "{time}/{theta}_{phi}/1_ImageFile.float32",
+      "type": "array",
+      "name": "1_ImageFile",
+      "categories": [
+        "1_ImageFile"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/normal.uint8",
+      "type": "array",
+      "name": "normal",
+      "categories": [
+        "normal"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/intensity.uint8",
+      "type": "array",
+      "name": "intensity",
+      "categories": [
+        "intensity"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/4_ImageFile.float32",
+      "type": "array",
+      "name": "4_ImageFile",
+      "categories": [
+        "4_ImageFile"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/0_ImageFile.float32",
+      "type": "array",
+      "name": "0_ImageFile",
+      "categories": [
+        "0_ImageFile"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/3_ImageFile.float32",
+      "type": "array",
+      "name": "3_ImageFile",
+      "categories": [
+        "3_ImageFile"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/2_ImageFile.float32",
+      "type": "array",
+      "name": "2_ImageFile",
+      "categories": [
+        "2_ImageFile"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/order.uint8",
+      "type": "array",
+      "name": "order",
+      "metadata": {}
+    }
+  ],
+  "arguments_order": [
+    "time",
+    "phi",
+    "theta"
+  ],
+  "metadata": {
+    "backgroundColor": "rgb(0, 0, 0)",
+    "size": "15.2 GB",
+    "title": "Combustion - Jet simulation",
+    "description": "SciDAC - Dr Jackie Chen - Sandia National Lab"
+  }
+}

@@ -1,0 +1,655 @@
+{
+  "LookupTables": {
+    "solid": {
+      "preset": "gray scale",
+      "range": [
+        0,
+        1
+      ]
+    },
+    "pressure": {
+      "range": [
+        0,
+        30000
+      ]
+    },
+    "vel": {
+      "range": [
+        0,
+        21386
+      ]
+    },
+    "vorticity": {
+      "range": [
+        0,
+        1295.56
+      ]
+    }
+  },
+  "CompositePipeline": {
+    "default_pipeline": "AABBCBDBEBFBGB",
+    "layers": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "pipeline": [
+      {
+        "name": "Vessel",
+        "ids": [
+          "A"
+        ]
+      },
+      {
+        "children": [
+          {
+            "name": "0.0",
+            "ids": [
+              "B"
+            ]
+          },
+          {
+            "name": "7500.0",
+            "ids": [
+              "C"
+            ]
+          },
+          {
+            "name": "15000.0",
+            "ids": [
+              "D"
+            ]
+          },
+          {
+            "name": "22500.0",
+            "ids": [
+              "E"
+            ]
+          },
+          {
+            "name": "30000.0",
+            "ids": [
+              "F"
+            ]
+          },
+          {
+            "name": "97590.0",
+            "ids": [
+              "G"
+            ]
+          }
+        ],
+        "name": "Contours pressure",
+        "ids": [
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G"
+        ]
+      }
+    ],
+    "layer_fields": {
+      "A": [
+        "A"
+      ],
+      "C": [
+        "B",
+        "C",
+        "D"
+      ],
+      "B": [
+        "B",
+        "C",
+        "D"
+      ],
+      "E": [
+        "B",
+        "C",
+        "D"
+      ],
+      "D": [
+        "B",
+        "C",
+        "D"
+      ],
+      "G": [
+        "B",
+        "C",
+        "D"
+      ],
+      "F": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "fields": {
+      "A": "solid",
+      "C": "vel",
+      "B": "pressure",
+      "D": "vorticity"
+    }
+  },
+  "type": [
+    "tonic-query-data-model",
+    "sorted-composite",
+    "multi-color-by"
+  ],
+  "arguments": {
+    "theta": {
+      "default": 3,
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 1,
+            "step": 30,
+            "modifier": 0,
+            "orientation": 1
+          }
+        }
+      },
+      "ui": "slider",
+      "name": "theta",
+      "values": [
+        "0",
+        "30",
+        "60",
+        "90",
+        "120",
+        "150",
+        "180"
+      ]
+    },
+    "phi": {
+      "values": [
+        "0",
+        "30",
+        "60",
+        "90",
+        "120",
+        "150",
+        "180",
+        "210",
+        "240",
+        "270",
+        "300",
+        "330"
+      ],
+      "bind": {
+        "mouse": {
+          "drag": {
+            "coordinate": 0,
+            "step": 30,
+            "modifier": 0,
+            "orientation": 1
+          }
+        }
+      },
+      "ui": "slider",
+      "name": "phi",
+      "loop": "modulo"
+    },
+    "time": {
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "89",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "97",
+        "98",
+        "99",
+        "100"
+      ],
+      "ui": "slider",
+      "name": "time",
+      "loop": "modulo"
+    }
+  },
+  "SortedComposite": {
+    "ranges": {
+      "solid": [
+        0,
+        1
+      ],
+      "pressure": [
+        -155209,
+        97593.8
+      ],
+      "vel": [
+        0,
+        21386
+      ],
+      "vorticity": [
+        0,
+        1295.56
+      ]
+    },
+    "layers": 7,
+    "pipeline": [
+      {
+        "colorBy": [
+          {
+            "type": "const",
+            "name": "solid",
+            "value": 0.5
+          }
+        ],
+        "name": "Vessel"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "pressure"
+          },
+          {
+            "type": "field",
+            "name": "vel"
+          },
+          {
+            "type": "field",
+            "name": "vorticity"
+          }
+        ],
+        "name": "0.0",
+        "parent": "Contours pressure"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "pressure"
+          },
+          {
+            "type": "field",
+            "name": "vel"
+          },
+          {
+            "type": "field",
+            "name": "vorticity"
+          }
+        ],
+        "name": "7500.0",
+        "parent": "Contours pressure"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "pressure"
+          },
+          {
+            "type": "field",
+            "name": "vel"
+          },
+          {
+            "type": "field",
+            "name": "vorticity"
+          }
+        ],
+        "name": "15000.0",
+        "parent": "Contours pressure"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "pressure"
+          },
+          {
+            "type": "field",
+            "name": "vel"
+          },
+          {
+            "type": "field",
+            "name": "vorticity"
+          }
+        ],
+        "name": "22500.0",
+        "parent": "Contours pressure"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "pressure"
+          },
+          {
+            "type": "field",
+            "name": "vel"
+          },
+          {
+            "type": "field",
+            "name": "vorticity"
+          }
+        ],
+        "name": "30000.0",
+        "parent": "Contours pressure"
+      },
+      {
+        "colorBy": [
+          {
+            "type": "field",
+            "name": "pressure"
+          },
+          {
+            "type": "field",
+            "name": "vel"
+          },
+          {
+            "type": "field",
+            "name": "vorticity"
+          }
+        ],
+        "name": "97590.0",
+        "parent": "Contours pressure"
+      }
+    ],
+    "dimensions": [
+      500,
+      500
+    ],
+    "light": [
+      "intensity",
+      "normal"
+    ]
+  },
+  "data": [
+    {
+      "pattern": "{time}/{theta}_{phi}/4_pressure.float32",
+      "type": "array",
+      "name": "4_pressure",
+      "categories": [
+        "4_pressure"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/4_vel.float32",
+      "type": "array",
+      "name": "4_vel",
+      "categories": [
+        "4_vel"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/2_vorticity.float32",
+      "type": "array",
+      "name": "2_vorticity",
+      "categories": [
+        "2_vorticity"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/6_pressure.float32",
+      "type": "array",
+      "name": "6_pressure",
+      "categories": [
+        "6_pressure"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/5_vorticity.float32",
+      "type": "array",
+      "name": "5_vorticity",
+      "categories": [
+        "5_vorticity"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/1_pressure.float32",
+      "type": "array",
+      "name": "1_pressure",
+      "categories": [
+        "1_pressure"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/5_vel.float32",
+      "type": "array",
+      "name": "5_vel",
+      "categories": [
+        "5_vel"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/1_vorticity.float32",
+      "type": "array",
+      "name": "1_vorticity",
+      "categories": [
+        "1_vorticity"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/normal.uint8",
+      "type": "array",
+      "name": "normal",
+      "categories": [
+        "normal"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/3_vel.float32",
+      "type": "array",
+      "name": "3_vel",
+      "categories": [
+        "3_vel"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/2_vel.float32",
+      "type": "array",
+      "name": "2_vel",
+      "categories": [
+        "2_vel"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/1_vel.float32",
+      "type": "array",
+      "name": "1_vel",
+      "categories": [
+        "1_vel"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/intensity.uint8",
+      "type": "array",
+      "name": "intensity",
+      "categories": [
+        "intensity"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/5_pressure.float32",
+      "type": "array",
+      "name": "5_pressure",
+      "categories": [
+        "5_pressure"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/3_pressure.float32",
+      "type": "array",
+      "name": "3_pressure",
+      "categories": [
+        "3_pressure"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/6_vorticity.float32",
+      "type": "array",
+      "name": "6_vorticity",
+      "categories": [
+        "6_vorticity"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/2_pressure.float32",
+      "type": "array",
+      "name": "2_pressure",
+      "categories": [
+        "2_pressure"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/6_vel.float32",
+      "type": "array",
+      "name": "6_vel",
+      "categories": [
+        "6_vel"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/3_vorticity.float32",
+      "type": "array",
+      "name": "3_vorticity",
+      "categories": [
+        "3_vorticity"
+      ],
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/order.uint8",
+      "type": "array",
+      "name": "order",
+      "metadata": {}
+    },
+    {
+      "pattern": "{time}/{theta}_{phi}/4_vorticity.float32",
+      "type": "array",
+      "name": "4_vorticity",
+      "categories": [
+        "4_vorticity"
+      ],
+      "metadata": {}
+    }
+  ],
+  "arguments_order": [
+    "time",
+    "phi",
+    "theta"
+  ],
+  "metadata": {
+    "backgroundColor": "rgb(0, 0, 0)",
+    "size": "6.6 GB",
+    "title": "Vessel - HydraTH",
+    "description": "Anomalies pressure contrours"
+  }
+}

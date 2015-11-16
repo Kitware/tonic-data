@@ -1,0 +1,7 @@
+!index.json
+!thumbnail.png
+*.DS_Store
+[0-9]*
+index
+fields
+points

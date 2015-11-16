@@ -1,0 +1,5 @@
+!index.json
+!thumbnail.png
+*.DS_Store
+*/.*
+[0-9]*
